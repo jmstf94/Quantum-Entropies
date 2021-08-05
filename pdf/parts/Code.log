@@ -1,0 +1,1583 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960) (preloaded format=pdflatex 2019.2.10)  8 FEB 2021 17:40
+entering extended mode
+**./Code.tex
+(Code.tex
+LaTeX2e <2018-12-01>
+! Undefined control sequence.
+l.1 \appendix
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.2 \chapter
+            {Mathematica Code}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \chapter{M
+              athematica Code}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.3 ...re but there will become available on \href
+                                                  {https://github.com/jmstf9...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.5 \section
+            {Basics}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--6
+[]
+ []
+
+
+Overfull \hbox (388.49661pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 The first line makes mathematica arrays look like matrices a
+t the outputs.[] 
+ []
+
+
+Overfull \hbox (435.7462pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 The rest is a function that traces out a subsystem of quDits
+ from a N-quDit system.[] 
+ []
+
+
+Overfull \hbox (293.99744pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 dTraceSystem has 3 arguments, the density matrix \[Rho],[] 
+ []
+
+
+Overfull \hbox (167.99854pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 the list of qudits to trace out,[] 
+ []
+
+
+Overfull \hbox (393.74657pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 e.g. {2, 3} and the dimension d of the qudits. This code was
+ taken from the[] 
+ []
+
+
+Overfull \hbox (414.74638pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 Wolfram Library Archive and it is called "Partial Trace of a
+ MultiquDit System"[] 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 by Mark Tame.[] 
+ []
+
+
+Overfull \hbox (299.24739pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 (https://library.wolfram.com/infocenter/MathSource/8763/)[] 
+
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 ClearAll["Global`*"][] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 $PrePrint = If[MatrixQ[#], MatrixForm[#], #] &;[] 
+ []
+
+
+Overfull \hbox (173.24849pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 SwapParts[expr_, pos1_, pos2_] :=[] 
+ []
+
+
+Overfull \hbox (283.49753pt too wide) in paragraph at lines 75--75
+[] \OT1/cmtt/m/n/10 ReplacePart[#, #, {pos1, pos2}, {pos2, pos1}] &[expr][] 
+ []
+
+
+Overfull \hbox (173.24849pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 dTraceSystem[D_, s_, dimen_] := ([] 
+ []
+
+
+Overfull \hbox (146.99872pt too wide) in paragraph at lines 75--75
+[]  \OT1/cmtt/m/n/10 Qudits = Reverse[Sort[s]];[] 
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 75--75
+[]  \OT1/cmtt/m/n/10 TrkM = D;[] 
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 75--75
+[]  \OT1/cmtt/m/n/10 dim = dimen;[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 75--75
+[]  \OT1/cmtt/m/n/10 z = (Dimensions[Qudits][[1]] + 1);[] 
+ []
+
+
+Overfull \hbox (125.9989pt too wide) in paragraph at lines 75--75
+[]  \OT1/cmtt/m/n/10 For[q = 1, q < z, q++,[] 
+ []
+
+
+Overfull \hbox (215.24812pt too wide) in paragraph at lines 75--75
+[]   \OT1/cmtt/m/n/10 n = Log[dim, (Dimensions[TrkM][[1]])];[] 
+ []
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 75--75
+[]   \OT1/cmtt/m/n/10 M = TrkM;[] 
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 75--75
+[]   \OT1/cmtt/m/n/10 k = Qudits[[q]];[] 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 75--75
+[]   \OT1/cmtt/m/n/10 If[k == n,[] 
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 75--75
+[]    \OT1/cmtt/m/n/10 TrkM = {};[] 
+ []
+
+
+Overfull \hbox (220.49808pt too wide) in paragraph at lines 75--75
+[]    \OT1/cmtt/m/n/10 For[p = 1, p < dim^n + 1, p = p + dim,[] 
+ []
+
+
+Overfull \hbox (152.24867pt too wide) in paragraph at lines 75--75
+[]     \OT1/cmtt/m/n/10 TrkM = Append[TrkM, \!\([] 
+ []
+
+
+Overfull \hbox (330.74712pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 \*UnderoverscriptBox[\(\[Sum]\), \(h = 0\), \(dim - 1\)]\(Ta
+ke[[] 
+ []
+
+
+Overfull \hbox (241.4979pt too wide) in paragraph at lines 75--75
+[]          \OT1/cmtt/m/n/10 M[\([\)\(p + h, All\)\(]\)], {1 + h,[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 \*SuperscriptBox[\(dim\), \(n\)], dim}]\)\)];[] 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 75--75
+[]      \OT1/cmtt/m/n/10 ],[] 
+ []
+
+
+Overfull \hbox (167.99854pt too wide) in paragraph at lines 75--75
+[]    \OT1/cmtt/m/n/10 For[j = 0, j < (n - k), j++,[] 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 75--75
+[]     \OT1/cmtt/m/n/10 b = {0};[] 
+ []
+
+
+Overfull \hbox (183.7484pt too wide) in paragraph at lines 75--75
+[]     \OT1/cmtt/m/n/10 For[i = 1, i < dim^n + 1, i++,[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 75--75
+[]      \OT1/cmtt/m/n/10 If[IntegerDigits[i - 1, dim, n][[n]] !=[] 
+ []
+
+
+Overfull \hbox (278.24757pt too wide) in paragraph at lines 75--75
+[]         \OT1/cmtt/m/n/10 IntegerDigits[i - 1, dim, n][[n - j - 1]] &&[] 
+ []
+
+
+Overfull \hbox (136.49881pt too wide) in paragraph at lines 75--75
+[]        \OT1/cmtt/m/n/10 Count[b, i]  == 0,[] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 75--75
+[]       \OT1/cmtt/m/n/10 b =[] 
+ []
+
+
+Overfull \hbox (157.49863pt too wide) in paragraph at lines 75--75
+[]        \OT1/cmtt/m/n/10 Append[b, (FromDigits[[] 
+ []
+
+
+Overfull \hbox (351.74693pt too wide) in paragraph at lines 75--75
+[]            \OT1/cmtt/m/n/10 SwapParts[(IntegerDigits[i - 1, dim, n]), {n}, {
+n - j -[] 
+ []
+
+
+Overfull \hbox (162.74858pt too wide) in paragraph at lines 75--75
+[]               \OT1/cmtt/m/n/10 1}], dim] + 1)];[] 
+ []
+
+
+Overfull \hbox (125.9989pt too wide) in paragraph at lines 75--75
+[]       \OT1/cmtt/m/n/10 c = Range[dim^n];[] 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 75--75
+[]       \OT1/cmtt/m/n/10 perm =[] 
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 75--75
+[]        \OT1/cmtt/m/n/10 SwapParts[[] 
+ []
+
+
+Overfull \hbox (157.49863pt too wide) in paragraph at lines 75--75
+[]         \OT1/cmtt/m/n/10 c, {i}, {(FromDigits[[] 
+ []
+
+
+Overfull \hbox (356.99689pt too wide) in paragraph at lines 75--75
+[]             \OT1/cmtt/m/n/10 SwapParts[(IntegerDigits[i - 1, dim, n]), {n}, 
+{n - j -[] 
+ []
+
+
+Overfull \hbox (173.24849pt too wide) in paragraph at lines 75--75
+[]                \OT1/cmtt/m/n/10 1}], dim] + 1)}];[] 
+ []
+
+
+Overfull \hbox (141.74876pt too wide) in paragraph at lines 75--75
+[]       \OT1/cmtt/m/n/10 M = M[[perm, perm]];[] 
+ []
+
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 75--75
+[]        \OT1/cmtt/m/n/10 ][] 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 75--75
+[]      \OT1/cmtt/m/n/10 ];[] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 75--75
+[]        \OT1/cmtt/m/n/10 ];[] 
+ []
+
+
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 75--75
+[]    \OT1/cmtt/m/n/10 TrkM = {};[] 
+ []
+
+
+Overfull \hbox (220.49808pt too wide) in paragraph at lines 75--75
+[]    \OT1/cmtt/m/n/10 For[p = 1, p < dim^n + 1, p = p + dim,[] 
+ []
+
+
+Overfull \hbox (152.24867pt too wide) in paragraph at lines 75--75
+[]     \OT1/cmtt/m/n/10 TrkM = Append[TrkM, \!\([] 
+ []
+
+
+Overfull \hbox (330.74712pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 \*UnderoverscriptBox[\(\[Sum]\), \(h = 0\), \(dim - 1\)]\(Ta
+ke[[] 
+ []
+
+
+Overfull \hbox (241.4979pt too wide) in paragraph at lines 75--75
+[]          \OT1/cmtt/m/n/10 M[\([\)\(p + h, All\)\(]\)], {1 + h,[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 75--75
+[]\OT1/cmtt/m/n/10 \*SuperscriptBox[\(dim\), \(n\)], dim}]\)\)];[] 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 75--75
+[]     \OT1/cmtt/m/n/10 ][] 
+ []
+
+
+Overfull \hbox (26.24977pt too wide) in paragraph at lines 75--75
+[]    \OT1/cmtt/m/n/10 ][] 
+ []
+
+
+Overfull \hbox (20.99982pt too wide) in paragraph at lines 75--75
+[]   \OT1/cmtt/m/n/10 ][] 
+ []
+
+
+Overfull \hbox (89.24922pt too wide) in paragraph at lines 75--75
+[]  \OT1/cmtt/m/n/10 ; Return[TrkM])[] 
+ []
+
+! Undefined control sequence.
+l.76 \section
+             {von Neumann I}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no I in font nullfont!
+
+Overfull \hbox (204.74821pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 psi = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}}[] 
+ []
+
+
+Overfull \hbox (283.49753pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 rho = KroneckerProduct[psi1, ConjugateTranspose[psi1]][] 
+ []
+
+
+Overfull \hbox (167.99854pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 {vals, vecs} = Eigensystem[rho1][] 
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 M = Transpose[vecs1][] 
+ []
+
+
+Overfull \hbox (36.74968pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 Det[M1][] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 Inverse[M][] 
+ []
+
+
+Overfull \hbox (131.24886pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 DG = DiagonalMatrix[vals][] 
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 M.DG.Inverse[M] == rho;[] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 F[x_] := Piecewise[{{x*Log[x], x > 0}, {0, x == 0}}, null];[
+] 
+ []
+
+
+Overfull \hbox (136.49881pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 FD = MatrixFunction[F, DG][] 
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 89--89
+[]\OT1/cmtt/m/n/10 -Tr[M.FD.Inverse[M]][] 
+ []
+
+! Undefined control sequence.
+l.90 \section
+             {von Neumann II}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no I in font nullfont!
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 $Assumptions = s \[Element] Reals && 0 < s < 1;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 rho = Refine[{{s, 0}, {0, 1 - s}}][] 
+ []
+
+
+Overfull \hbox (204.74821pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 {vals, vecs} = Refine[Eigensystem[rho]][] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 F[x_] := Piecewise[{{x*Log[x], x > 0}, {0, x == 0}}, null];[
+] 
+ []
+
+
+Overfull \hbox (183.7484pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 FD = Refine[MatrixFunction[F, rho]][] 
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 L = -Tr[FD][] 
+ []
+
+
+Overfull \hbox (278.24757pt too wide) in paragraph at lines 99--99
+[]\OT1/cmtt/m/n/10 Plot[L, {s, 0, 1}, AxesLabel -> {"s", "S (\[Rho])" }][] 
+ []
+
+! Undefined control sequence.
+l.100 \section
+              {Renyi I}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no I in font nullfont!
+
+Overfull \hbox (283.49753pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 $Assumptions = \[Alpha] \[Element] Reals && \[Alpha] >[] 
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 117--117
+[]    \OT1/cmtt/m/n/10 0 && \[Alpha] != 1;[] 
+ []
+
+
+Overfull \hbox (204.74821pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 psi = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}}[] 
+ []
+
+
+Overfull \hbox (272.99762pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 rho = KroneckerProduct[psi, ConjugateTranspose[psi]][] 
+ []
+
+
+Overfull \hbox (162.74858pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 {vals, vecs} = Eigensystem[rho][] 
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 M = Transpose[vecs][] 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 Det[M][] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 Inverse[M][] 
+ []
+
+
+Overfull \hbox (131.24886pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 DG = DiagonalMatrix[vals][] 
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 M.DG.Inverse[M] == rho[] 
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 F[x_] := x^\[Alpha];[] 
+ []
+
+
+Overfull \hbox (225.74803pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 matrixtrans = Refine[MatrixFunction[F, DG]][] 
+ []
+
+
+Overfull \hbox (220.49808pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 matrixtransnext = M.matrixtrans.Inverse[M][] 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{verbatim}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> \newlabel{appendix:code}{{}{\thepage 
+                                             }}
+l.117 \end{verbatim}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{appendix:code}{{}{}}
+{C:/Users/jmstf/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 L = Tr[matrixtransnext][] 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 117--117
+[]\OT1/cmtt/m/n/10 Log[L][] 
+ []
+
+! Undefined control sequence.
+l.118 \section
+              {Renyi II}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no I in font nullfont!
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 Clear[\[Alpha], s][] 
+ []
+
+
+Overfull \hbox (283.49753pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 $Assumptions = \[Alpha] \[Element] Reals && \[Alpha] >[] 
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 134--134
+[]    \OT1/cmtt/m/n/10 0 && \[Alpha] != 1;[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 $Assumptions = s \[Element] Reals && 0 < s < 1;[] 
+ []
+
+
+Overfull \hbox (136.49881pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 rho = {{s, 0}, {0, 1 - s}}[] 
+ []
+
+
+Overfull \hbox (136.49881pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 function[x_] := x^\[Alpha][] 
+ []
+
+
+Overfull \hbox (225.74803pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 finalmatrix = MatrixFunction[function, rho][] 
+ []
+
+
+Overfull \hbox (204.74821pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 L = Log[Tr[finalmatrix]]/(1 - \[Alpha])[] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 Plot[Evaluate@Table[L, {\[Alpha], 0.1, 4, 0.4}], {s, 0, 1},[
+] 
+ []
+
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 134--134
+[] \OT1/cmtt/m/n/10 PlotLegends ->[] 
+ []
+
+
+Overfull \hbox (283.49753pt too wide) in paragraph at lines 134--134
+[]  \OT1/cmtt/m/n/10 LineLegend[Table[\[Alpha], {\[Alpha], 0.1, 4, 0.4}],[] 
+ []
+
+
+Overfull \hbox (367.4968pt too wide) in paragraph at lines 134--134
+[]   \OT1/cmtt/m/n/10 LegendLabel -> \[Alpha]], AxesLabel -> {"s", "R(\[Alpha];
+\[Rho])"}][] 
+ []
+
+
+Overfull \hbox (204.74821pt too wide) in paragraph at lines 134--134
+[]\OT1/cmtt/m/n/10 Plot3D[L, {s, 0, 1}, {\[Alpha], 0, 15},[] 
+ []
+
+
+Overfull \hbox (194.2483pt too wide) in paragraph at lines 134--134
+[] \OT1/cmtt/m/n/10 AxesLabel -> {"s", "\[Alpha]", "R"}][] 
+ []
+
+! Undefined control sequence.
+l.135 \section
+              {Tsallis I}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no I in font nullfont!
+
+Overfull \hbox (47.24959pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 Clear[q];[] 
+ []
+
+
+Overfull \hbox (278.24757pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 $Assumptions = q \[Element] Reals && q > 0 && q != 1;[] 
+ []
+
+
+Overfull \hbox (209.99817pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 psi = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}};[] 
+ []
+
+
+Overfull \hbox (278.24757pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 rho = KroneckerProduct[psi, ConjugateTranspose[psi]];[] 
+ []
+
+
+Overfull \hbox (162.74858pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 {vals, vecs} = Eigensystem[rho][] 
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 M = Transpose[vecs][] 
+ []
+
+
+Overfull \hbox (31.49973pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 Det[M][] 
+ []
+
+
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 Inverse[M][] 
+ []
+
+
+Overfull \hbox (131.24886pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 DG = DiagonalMatrix[vals][] 
+ []
+
+
+Overfull \hbox (115.499pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 M.DG.Inverse[M] == rho[] 
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 t[x_] := x^q;[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 FD = Simplify[MatrixFunction[t, DG]][] 
+ []
+
+
+Overfull \hbox (141.74876pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 trace = Tr[M.FD.Inverse[M]][] 
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 151--151
+[]\OT1/cmtt/m/n/10 (trace - 1)/(1 - q)[] 
+ []
+
+! Undefined control sequence.
+l.152 \section
+              {Tsallis II}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no I in font nullfont!
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 Clear[q, s][] 
+ []
+
+
+Overfull \hbox (278.24757pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 $Assumptions = q \[Element] Reals && q > 0 && q != 1;[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 $Assumptions = s \[Element] Reals && 0 < s < 1;[] 
+ []
+
+
+Overfull \hbox (136.49881pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 rho = {{s, 0}, {0, 1 - s}}[] 
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 function[x_] := x^q[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 matr = MatrixFunction[function, rho][] 
+ []
+
+
+Overfull \hbox (146.99872pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 L = ((Tr[matr]) - 1)/(1 - q)[] 
+ []
+
+
+Overfull \hbox (272.99762pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 Plot[Evaluate@Table[L, {q, 0.1, 4, 0.4}], {s, 0, 1},[] 
+ []
+
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 166--166
+[] \OT1/cmtt/m/n/10 PlotLegends ->[] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 166--166
+[]  \OT1/cmtt/m/n/10 LineLegend[Table[q, {q, 0.1, 4, 0.4}], LegendLabel -> q],[
+] 
+ []
+
+
+Overfull \hbox (183.7484pt too wide) in paragraph at lines 166--166
+[] \OT1/cmtt/m/n/10 AxesLabel -> {"s", "T(q;\[Rho])"}][] 
+ []
+
+
+Overfull \hbox (330.74712pt too wide) in paragraph at lines 166--166
+[]\OT1/cmtt/m/n/10 Plot3D[L8, {s, 0, 1}, {q, 0, 15}, AxesLabel -> {"s", "q", "T
+"}][] 
+ []
+
+! Undefined control sequence.
+l.167 \section
+              {Conditional}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 Clear[\[Theta]][] 
+ []
+
+
+Overfull \hbox (351.74693pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 $Assumptions = \[Theta] \[Element] Reals && 0 < \[Theta] < \
+[Pi]/2;[] 
+ []
+
+
+Overfull \hbox (262.49771pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 chi = {{Cos[\[Theta]]}, {0}, {0}, {Sin[\[Theta]]}}[] 
+ []
+
+
+Overfull \hbox (325.49716pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 sigma = Refine[KroneckerProduct[chi, ConjugateTranspose[chi]
+]][] 
+ []
+
+
+Overfull \hbox (183.7484pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 {values, vecs} = Eigensystem[sigma][] 
+ []
+
+
+Overfull \hbox (152.24867pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 M = Simplify[Transpose[vecs]][] 
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 FullSimplify[Det[M]][] 
+ []
+
+
+Overfull \hbox (141.74876pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 Minv = Simplify[Inverse[M]][] 
+ []
+
+
+Overfull \hbox (152.24867pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 diag = DiagonalMatrix[values][] 
+ []
+
+
+Overfull \hbox (104.99908pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 sigma == M.diag.Minv[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 sigmaA = dTraceSystem[sigma, {2}, 2][] 
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 F[x_] := x*Log[x];[] 
+ []
+
+
+Overfull \hbox (152.24867pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 L = MatrixFunction[F, sigmaA][] 
+ []
+
+
+Overfull \hbox (125.9989pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 FullSimplify[L3 = Tr[L]][] 
+ []
+
+
+Overfull \hbox (362.24684pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 Plot[L3, {\[Theta], 0, \[Pi]/2}, AxesLabel -> {"\[Theta]", "
+S(A|B)"}][] 
+ []
+
+
+Overfull \hbox (162.74858pt too wide) in paragraph at lines 185--185
+[]\OT1/cmtt/m/n/10 Refine[L3, \[Theta] == \[Pi]/4][] 
+ []
+
+! Undefined control sequence.
+l.186 \section
+              {Werner von Neumann}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 $Assumptions = s \[Element] Reals && 0 < s < 1;[] 
+ []
+
+
+Overfull \hbox (346.49698pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0
+}, {0,[] 
+ []
+
+
+Overfull \hbox (241.4979pt too wide) in paragraph at lines 213--213
+[]    \OT1/cmtt/m/n/10 0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};[] 
+ []
+
+
+Overfull \hbox (220.49808pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 {Wvals, Wvecs} = Eigensystem[WernerState];[] 
+ []
+
+
+Overfull \hbox (157.49863pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Mw = Refine[Transpose[Wvecs]];[] 
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Det[Mw];[] 
+ []
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Inverse[Mw];[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 DGw = Refine[DiagonalMatrix[Wvals]];[] 
+ []
+
+
+Overfull \hbox (225.74803pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 WernerState == Simplify[Mw.DG.Inverse[Mw]];[] 
+ []
+
+
+Overfull \hbox (314.99725pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Fw[x_] := Piecewise[{{x*Log[x], x > 0}, {0, x == 0}}, null];
+[] 
+ []
+
+
+Overfull \hbox (199.49826pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 FDw = Refine[MatrixFunction[Fw, DGw]];[] 
+ []
+
+
+Overfull \hbox (372.74675pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Simplify[-Tr[Mw.FDw.Inverse[Mw]]] == Simplify[vonNeumann[Wer
+nerState]];[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Simplify[vonNeumann[WernerState]];[] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 WernerStateA = Simplify[dTraceSystem[WernerState, {2}, 2]];[
+] 
+ []
+
+
+Overfull \hbox (330.74712pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 CSofWerner = vonNeumann[WernerState] - vonNeumann[WernerStat
+eA][] 
+ []
+
+
+Overfull \hbox (278.24757pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 Entanglementsvalue = N[Refine[CSofWerner, s == 1/3]];[] 
+ []
+
+
+Overfull \hbox (241.4979pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 N[Refine[vonNeumann[WernerStateA], s == 1/3]];[] 
+ []
+
+
+Overfull \hbox (272.99762pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 zerocondwerner = s /. FindRoot[CSofWerner, {s, 0.7}][] 
+ []
+
+
+Overfull \hbox (341.24702pt too wide) in paragraph at lines 213--213
+[]\OT1/cmtt/m/n/10 plot1 = Plot[CSofWerner, {s, 0, 1}, AxesLabel -> {"s", "S(B|
+A)"},[] 
+ []
+
+
+Overfull \hbox (341.24702pt too wide) in paragraph at lines 213--213
+[]  \OT1/cmtt/m/n/10 GridLines -> {{{1/3, Dashed}}, {{Entanglementsvalue, Dashe
+d}}},[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 213--213
+[]  \OT1/cmtt/m/n/10 Epilog -> {{Blue, PointSize@Large,[] 
+ []
+
+
+Overfull \hbox (325.49716pt too wide) in paragraph at lines 213--213
+[]     \OT1/cmtt/m/n/10 Point[{1/3, Entanglementsvalue}]}, {Red, PointSize@Larg
+e,[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 213--213
+[]     \OT1/cmtt/m/n/10 Point[{zerocondwerner, 0}]}}][] 
+ []
+
+! Undefined control sequence.
+l.214 \section
+              {Werner Tsallis}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Clear[s, x, q];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 $Assumptions = s \[Element] Reals && 0 < s < 1;[] 
+ []
+
+
+Overfull \hbox (346.49698pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0
+}, {0,[] 
+ []
+
+
+Overfull \hbox (241.4979pt too wide) in paragraph at lines 270--270
+[]    \OT1/cmtt/m/n/10 0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};[] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 WernerStateA = Simplify[dTraceSystem[WernerState, {2}, 2]];[
+] 
+ []
+
+
+Overfull \hbox (262.49771pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 {valsT, vecsT} = Refine[Eigensystem[WernerState]];[] 
+ []
+
+
+Overfull \hbox (157.49863pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 MT = Refine[Transpose[vecsT]];[] 
+ []
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Inverse[MT];[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 DGT = Refine[DiagonalMatrix[valsT]];[] 
+ []
+
+
+Overfull \hbox (225.74803pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 FT[y_] := Piecewise[{{y^x, y >= 0}}, null];[] 
+ []
+
+
+Overfull \hbox (199.49826pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 FDT = Refine[MatrixFunction[FT, DGT]];[] 
+ []
+
+
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 MT.FDT.Inverse[MT];[] 
+ []
+
+
+Overfull \hbox (257.24776pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Firstterm = (Tr[MT.FDT.Inverse[MT]] - 1)/(1 - x);[] 
+ []
+
+
+Overfull \hbox (251.9978pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 FDT2 = Refine[MatrixFunction[FT, WernerStateA]];[] 
+ []
+
+
+Overfull \hbox (188.99835pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Secondterm = (Tr[FDT2] - 1)/(1 - x);[] 
+ []
+
+
+Overfull \hbox (62.99945pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 ResultingT =[] 
+ []
+
+
+Overfull \hbox (314.99725pt too wide) in paragraph at lines 270--270
+[] \OT1/cmtt/m/n/10 Simplify[(Firstterm - Secondterm)/(1 + (1 - x)*Secondterm)]
+[] 
+ []
+
+
+Overfull \hbox (209.99817pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Plot3D[ResultingT, {x, 0, 3}, {s, 0, 1}][] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT1 = Refine[ResultingT, x == 0.3];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root1 = s /. FindRoot[examplidionT1, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT2 = Refine[ResultingT, x == 0.9];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root2 = s /. FindRoot[examplidionT2, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT3 = Refine[ResultingT, x == 1.5];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root3 = s /. FindRoot[examplidionT3, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT4 = Refine[ResultingT, x == 2.1];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root4 = s /. FindRoot[examplidionT4, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT5 = Refine[ResultingT, x == 2.7];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root5 = s /. FindRoot[examplidionT5, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT6 = Refine[ResultingT, x == 3.3];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root6 = s /. FindRoot[examplidionT6, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (236.24794pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 examplidionT7 = Refine[ResultingT, x == 3.9];[] 
+ []
+
+
+Overfull \hbox (246.74785pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 root7 = s /. FindRoot[examplidionT7, {s, 0.9}];[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root1 = examplidionT1 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root2 = examplidionT2 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root3 = examplidionT3 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root4 = examplidionT4 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root5 = examplidionT5 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root6 = examplidionT6 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (178.49844pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Root7 = examplidionT7 /. s -> 1/3;[] 
+ []
+
+
+Overfull \hbox (320.24721pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Plot[Evaluate@Table[ResultingT, {x, 0.3, 4, 0.6}], {s, 0, 1}
+,[] 
+ []
+
+
+Overfull \hbox (78.74931pt too wide) in paragraph at lines 270--270
+[] \OT1/cmtt/m/n/10 PlotLegends ->[] 
+ []
+
+
+Overfull \hbox (309.7473pt too wide) in paragraph at lines 270--270
+[]  \OT1/cmtt/m/n/10 LineLegend[Table[x, {x, 0.3, 4, 0.6}], LegendLabel -> x],[
+] 
+ []
+
+
+Overfull \hbox (157.49863pt too wide) in paragraph at lines 270--270
+[] \OT1/cmtt/m/n/10 AxesLabel -> {"s", "T(B|A)"},[] 
+ []
+
+
+Overfull \hbox (267.74767pt too wide) in paragraph at lines 270--270
+[] \OT1/cmtt/m/n/10 GridLines -> {{{1/3, Dashed}}, {{Root1, Dashed}}},[] 
+ []
+
+
+Overfull \hbox (335.99707pt too wide) in paragraph at lines 270--270
+[] \OT1/cmtt/m/n/10 Epilog -> {{Red, PointSize[Large], Point[{1/3, Root1}]}, {B
+lue,[] 
+ []
+
+
+Overfull \hbox (220.49808pt too wide) in paragraph at lines 270--270
+[]    \OT1/cmtt/m/n/10 PointSize[Large], Point[{root1, 0}]}}][] 
+ []
+
+
+Overfull \hbox (288.74748pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 EntanglementLimitValueT = Refine[ResultingT, s == 1/3];[] 
+ []
+
+
+Overfull \hbox (215.24812pt too wide) in paragraph at lines 270--270
+[]\OT1/cmtt/m/n/10 Plot[EntanglementLimitValueT, {x, 0, 50}][] 
+ []
+
+)
+! Emergency stop.
+<*> ./Code.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 492946
+ 197 string characters out of 3132881
+ 77070 words of memory out of 3000000
+ 4006 multiletter control sequences out of 15000+200000
+ 3808 words of font info for 15 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,4n,14p,211b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

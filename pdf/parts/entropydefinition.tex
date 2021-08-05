@@ -1,0 +1,90 @@
+\section{von Neumann Entropy}
+\label{vonNeumannEntropysec}
+\par
+Entropy as a measure of probabilistic uncertainty originates in Boltzmann's work on statistical mechanics in the 1800's (see \cite{sharp2015translation}). Max Planck wrote down the definition in its current form as:
+\begin{equation}
+S=k \ln W
+\end{equation}
+with $W$ being the number of possible microstates for a given macrostate, while k is just the so called Boltzmann constant. This definition thought, regards just systems in thermodynamic equilibrium. 
+\par
+Gibbs redefined entropy as:
+\begin{equation}
+S(\rho)=-k \int \rho(x, t) \log (\rho(x, t)) d x
+\label{gibbs}
+\end{equation}
+in which $\rho(x,t)$ is the probability density/mass function for the microstates. This is considered a more general formula since it can be meaningful in systems without equilibrium.
+\par 
+Is more easily seen now, how Shannon and von Neumann figured out their homonymous entropies. Shannon wrote down the entropy of a discrete probability mass function as:
+\begin{equation}
+\mathrm{H}(X)=-\sum_{i=1}^{n} \mathrm{P}\left(x_{i}\right) \log _{b} \mathrm{P}\left(x_{i}\right)
+\label{shanon}
+\end{equation}
+In his famous original paper \cite{shannon1948mathematical}, Shannon extensively argues for the use of this formula to measure "uncertainty" in the theory of communication, a field which before Shannon's insights, had occupied only a small community of researchers. He established the use of entropy as a generally probabilistic entity and not just as a physical concept. Note that the Shannon entropy could be viewed as taking the integral \eqref{gibbs} with a different measure(making it a sum).
+\par
+From Shannon's paper we also get the joint entropy as:
+\begin{equation}
+H(x, y)=-\sum_{i, j} p(i, j) \log p(i, j)
+\end{equation}
+To turn to our primal goal, the von Neumann entropy is the generalization of the Shannon entropy in operator algebras as discussed in \cite{von2018mathematical} and then more analytically studied by Segal \citep{segal1960note}, Nakamura \citep{nakamura1961note}, and others. 
+\par
+\begin{definition}(Von Neumann entropy)The von Neumann entropy of a quantum state $\rho$ is defined as:
+\begin{equation}
+S(\rho)\equiv -\operatorname{Tr}(\rho \log \rho).
+\label{vonNeumann}
+\end{equation}
+\end{definition}
+\begin{note}The logarithms are taken to natural base. 
+\end{note}
+\begin{note}
+This density matrix formulation of the entropy is not needed in cases of thermal equilibrium so long as the basis states are chosen to be energy eigenstates. In that case the previous definitions should be sufficient.
+\end{note}
+We can think of $\rho$ as probability density function when we try to get quantitative intuition. Density operators have matrix representations and is what we will mainly use in our calculations.
+\begin{note}The basis of the logarithm is qualitatively irrelevant.
+\end{note}
+The choice of logarithm basis is nothing more than a convention.
+Our main goal is for the definitions to be clearly calculatable and programmable. To do that, one of the "problems" that the above definition creates is the calculation of $0 \ln 0$. As we have said some textbooks say that by convention we "define" $0 \ln 0 \equiv 0$. This is not an arbitrary convention but a perfectly reasonable extension of the definition. However, it does not help programmability. For example,  Mathematica will through an error since it will try to calculate $0 \cdot \infty$, while Python will possibly end up calculating some number with zero.
+\par
+There are two easy ways to describe von Neumann entropy in order to serve our goals. We write a function that will help us re-express \ref{vonNeumann}. Let $F: \mathbb{R}^{+} \rightarrow \mathbb{R}$ in which $\mathbb{R}^{+}= \{x \geq 0|x \in \mathbb{R} \} $ as:
+\begin{equation}
+F(x)=\lim_{\epsilon \to x^{+}}(\epsilon \ln \epsilon).
+\label{prac_von}
+\end{equation}
+This could work for frameworks that allow automated calculation of limits. In the case off a non-symbolic programming framework(like C or Python), $F$ should take the form:
+\begin{equation}
+F(x)= 
+ \begin{cases} 
+      0 & x=0 \\
+      x \log x & x > 0 
+\end{cases}
+\end{equation}
+as stated in \cite{holevo2012quantum}. Similar approaches can be formulated with the Iverson Bracket or some step function. The reason we define this simple function explicitly is to emphasize that this is the function that accepts the matrix generalization. These definitions help us to write down the calculations with a bit more rigor or program a function in some computer language.
+\par
+Following Holevo (\citep{holevo2012quantum}), Shannon entropy could now stated as:
+\begin{equation}
+\mathrm{H}(X)=-\sum_{i=1}^{n} F(\mathrm{P}\left(x_{i}\right))
+\label{shanon2}
+\end{equation}
+without loss of rigor in the case of a probability zero event.
+We define the von Neumann entropy in its more practical form for calculation reasons:
+\begin{definition}(Heuristic von Neumann entropy)For a density matrix $\rho \in \mathcal{D}(\mathcal{H})$ the heuristic form of the von Neumann entropy is defined as:
+\label{vonNeumanndef}
+\begin{equation}
+S(\rho)=-\Tr(F(\rho))
+\label{vonNeumann2}
+\end{equation}
+in which F is the function $F: [0,1] \rightarrow \mathbb{R}$: 
+\begin{equation}
+F(x)=\lim_{\epsilon \to x}(\epsilon \log \epsilon)
+\end{equation}
+\end{definition}
+\noindent
+The domain of the function now is $[0,1]$ which has no implications in the results. 
+The von Neumann entropy in a sense, measures the mixidity of a state as explain in \cite{susskind2005introduction}. This is demonstrated later in our calculations. 
+\par
+Using the cyclic property of the trace and the modal matrix decomposition we can simplify the above definition. We end up with the Shannon entropy of the eigenvalues $\lambda_i$ of $\rho$:
+\begin{equation}
+S(\rho)=-\sum_{i} F(\lambda_i)
+\end{equation}
+\noindent
+We later write the above simplification as a general proposition based on the definitions.
+

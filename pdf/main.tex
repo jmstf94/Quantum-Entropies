@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{book}
+\input{settings/packages}
+\input{settings/page}
+\input{settings/macros}
+\begin{document}
+\input{parts/titlepage}
+\pagestyle{plain}
+\input{parts/abstract}
+\tableofcontents
+\chapter{Preliminaries}
+\input{parts/LAandOperators}
+\input{parts/qm}
+\chapter{Entropies}
+\noindent
+Let us here set up some motivation for our study:
+\begin{itemize}
+\item In most textbooks is suggested to use certain mathematically ill-defined conventions when calculating quantum entropies(for example $0\ln 0\equiv 0$). While these conventions might work operationally, is virtually impossible to use them when we automate the calculations with programming languages. Besides some automations in IBM's qiskit we couldn't find enough information regarding this issue.
+\item It is not easy to find analytic calculations of entropies in the literature. In fact, we 'll see that in some cases is not clear how that calculations are meant to be completed based on the formal definitions. We use a lot of free parameters in our calculations. The reason? These parameters could be considered as "knobs" in experiments.
+\item Why a physicist might care about quantum entropies? The statistical nature of entropies allows for experiments that directly  measure entropic quantities i.e. without being aware of state $\rho$(see \cite{islam2015measuring},\cite{de2020proposal}). Hence, studying entropies might help us to deduce properties of a system without explicitly prepare its specific state.
+\item Why do we even talk about more than one entropy? Mathematically, more general forms of entropies might help to prove general results on given probability distributions or even describe some properties that less general formulas can't see. Physically the same thing happens. Different forms of entropy can  describe extra or different phenomena than the usual definition(for example Tsallis). Entropies can be seen as a mapping of statistical properties of some stochastic system to the real line.
+\end{itemize}
+\par
+In the previous chapter we avoided to express our statements as theorems due to lack of rigor. In this chapter we become a bit more formalized and we use definitions to better serve our purpose.
+\input{parts/entropydefinition}
+\input{parts/RenyiEntropyTheory}
+\input{parts/UnifiedTsalisTheory}
+\input{parts/conditionalentropydefinition}
+\input{parts/RelativeEntropyDef}
+\input{parts/UnifiedDescriptions}
+\chapter{Calculations}
+Since our motivations are about physics and realistic future implementations, we try to connect our abstract calculations to 
+example states already produced in experiments. We will also use some theoretically manufactured examples, in order to demonstrate certain properties and behaviors of our results. Some calculations will be fully detailed and in others we will just state the results.
+\par 
+In \ref{appendix:code} you can find portions of the Mathematica code that has been used in the following calculations. The fully general code will be uploaded on my  \href{https://github.com/jmstf94}{github}.
+\input{parts/CalculationvonNeumann}
+\input{parts/RenyiEntropyCalculation}
+\input{parts/TsallisEntropyCalculation}
+\input{parts/ConditionalEntropyCalculation}
+\input{parts/WernerStateCalculations}
+\input{parts/RelativeEntropyCalculation}
+\input{parts/Conclutions}
+\input{parts/Code}
+\bibliographystyle{abbrv}
+\bibliography{bibliography/biblio}
+\end{document}

@@ -1,0 +1,35 @@
+\section{Unified discriptions}
+The definition of relative and conditional entropies is an ongoing discussion in the community. There are many ways to define slightly differently the various entropies and especially relative and conditional forms. Sandwiched forms(\cite{muller2013quantum}), general entropy functions(\citep{rossignoli2010generalized}), f-Relative entropy(\cite{hayashi2016quantum}) and the conditional density operator approach are some of the existing definitions. It may be the case that different definitions are all useful since the goal is to describe certain properties of a given density matrix. We discuss a small fraction of the generalized approaches just to get an overview.
+\subsection{Heuristic forms}
+Let's discuss now the so called "Unified Entropy". In \cite{hu2006generalized} is defined a somewhat general entropy(2-parameter formula). Different values of the two parameters conclude to different measures including Tsallis,Renyi and von Neumann entropies.
+In \cite{rathie1991unified} there is an analytic study of its classical version. Based on that paper, Hu and Ye wrote down a quantum version of the unified entropy. Make sure to review \citep{hu2006generalized} and \cite{muller2013quantum} for fullness of detail.
+\begin{definition}(Quantum unified entropy)For a density operator $\rho \in \mathcal{D}(\mathcal{H})$ in a Hilbert Space $\mathcal{H}$ the unified quantum entropy is defined as:
+\begin{equation}
+E_{r}^{s}(\rho)=\left\{\begin{array}{lll}
+[(1-r) s]^{-1}\left\{\left[\operatorname{Tr}\left(\rho^{r}\right)\right]^{s}-1\right\}, & \text { if } r \neq 1, & s \neq 0 \\
+(1-r)^{-1} \log \left[\operatorname{Tr}\left(\rho^{r}\right)\right], & \text { if } r \neq 1, & s=0 \\
+(1-r)^{-1}\left[\operatorname{Tr}\left(\rho^{r}\right)-1\right],
+ & \text { if } r \neq 1, & s=1 \\
+(r-1)^{-1}\left\{\left[\operatorname{Tr}\left(\rho^{1 / r}\right)\right]^{r}-1\right\},& \text { if } r \neq 1, & s=1 / r \\
+-\operatorname{Tr}(\rho \log \rho), & \text { if } r=1
+\end{array}\right.
+\end{equation}
+where $r>0$ and $s \in \mathcal{R}$ are real parameters.
+\end{definition}
+\noindent
+In \citep{hu2006generalized} we can see that limiting cases of the quantum unified entropy end up to the known entropies. We use that and rewrite everything in a single formula:
+\begin{definition}(Heuristic Quantum (r,s)-entropy) For a density matrix $\rho \in \mathcal{D}(\mathcal{H})$ we define the heuristic form of the quantum (r,s)-entropy as:
+\begin{equation}
+U(r,s;\rho)=\lim_{\epsilon \to r}\Big\{ \lim_{\lambda \to s}\big\{ [(1-\epsilon) \lambda]^{-1} \big[ [\operatorname{Tr}(\rho^{\epsilon})]^{\lambda}-1 \big] \big\}  \Big\}
+\end{equation}
+in which $r$ and $s$ are free parameters with $r>0$.
+\end{definition}
+\subsection{From quantum to classical}
+Let's assume that we have a density matrix $\rho \in \mathcal{D}(\mathcal{H})$ with eigenvalues $\{ \rho_i \}$. When we calculate entropies we rewrite $\rho$ as $MDM^{-1}$ in order to apply some function $F$ and result to $MF(D)M^{-1}$. We can think of an entropy as a mapping of a distribution(quantum or not) to the real line. In our case this mapping to real line, comes with the trace operation on the matrix. This means that in any case we have to calculate $\Tr \{MF(D)M^{-1}\}$. Using the cyclic property of the trace we end up to:
+\begin{equation}
+\sum_i F(\rho_i)
+\end{equation}
+Thus for some density matrix:
+\begin{note}
+A quantum entropy of $\rho$ and the corresponding classical entropy of the probability mass of $\rho$'s eigenvalues $\{\rho_i\}$, are equal.
+\end{note}

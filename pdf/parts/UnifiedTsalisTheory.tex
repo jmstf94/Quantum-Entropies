@@ -1,0 +1,28 @@
+\section{Tsallis entropy}
+Tsalis entropy is another extensively used generalization  of common entropies with one parameter (see \cite{tsallis1998},\cite{tsallis2016}). It was originally 
+proposed in 1988(\cite{tsallis1988original}) in its classical form as an alternative to \eqref{gibbs}. For a probability mass ${p_i}$:
+\begin{equation}
+S_{q}\left(p_{i}\right)=\frac{k}{q-1}\left(1-\sum_{i} p_{i}^{q}\right)
+\end{equation}
+It's quantum generalization was discussed firstly in \cite{tsallisquantum} and was rewritten later as:
+\begin{definition}(Quantum Tsallis entropy)For a quantum state $\rho$ the quantum Tsallis entropy is defined as:
+\begin{equation}
+S_q(\rho)=\frac{1}{1-q}\left(\Tr \left(\rho^{q}\right)-1\right), q \in(0,1) \cup(1, \infty)
+\end{equation}
+\label{TsallisDEF}
+\end{definition}
+\noindent
+We follow the same logic as we did in the Renyi case and redefine a heuristic form of the quantum Tsallis entropy:
+\begin{definition}(Heuristic quantum Tsallis entropy)For a density matrix $\rho \in \mathcal{D}(\mathcal{H})$ the heuristic form of the quantum Tsallis entropy is defined as:
+\begin{equation}
+T(q ; \rho)= \frac{1}{1-q}\left(\Tr \left[t(q;\rho)\right]-1\right), q \in(0,1) \cup(1, \infty)
+\end{equation}
+in which $t$ is the function $t:[0,1] \rightarrow \mathbb{R^{+}}$:
+\begin{equation}
+t(q;x)=x^{q}
+\end{equation}
+\label{tsallis}
+\end{definition}
+\begin{note}
+It can be proved that: $S(\rho)=\lim _{q \rightarrow 1} T(q;\rho)$.
+\end{note}

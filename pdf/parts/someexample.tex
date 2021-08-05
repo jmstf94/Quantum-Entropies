@@ -1,0 +1,62 @@
+\subsection{Arbitrary Example}
+Let us calculate the Relative Quantum Entropy of state \eqref{rhomatrix} $\rho$ and the ideal part $\sigma$ of a 2-qubit GHZ state as described in \cite{tenphoton}. This paper presents experimental evidence of a 10-photon entanglement. Using the tensor product basis and notation convention similar to \eqref{pspspsps} for polarized light we get:
+\begin{align}
+\sigma &=\frac{1}{2}\ket{H}\ket{H}\bra{H}\bra{H}+\frac{1}{2}\ket{V}\ket{V} \bra{V} \bra{V} \\[0.5em]&=\frac{1}{2}\ket{00}\bra{00}+\frac{1}{2}\ket{11}\bra{11}
+\\[0.5em] &= \left(
+\begin{array}{cccc}
+ \frac{1}{2} & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & \frac{1}{2} \\
+\end{array}
+\right)
+\end{align}
+We will use our heuristic prescription of \defref{heuristickulback}:
+\begin{align}
+Q(\rho \| \sigma) &= S(\rho)-\lim_{\epsilon \to -\infty} \left\{ \Tr[\rho  G(\epsilon; \sigma)] \right\} \\[0.5em]
+&=-\lim_{\epsilon \to -\infty} \left\{ \Tr[\rho  G(\epsilon; \sigma)] \right\}
+\end{align}
+since we know from\eqref{functionimp} that $S(\rho)=0$. Since $\sigma$ is already diagonal we apply the function $G(\epsilon;\sigma)$ immediately:
+\begin{align}
+Q(\rho \| \sigma) &=-\lim_{\epsilon \to -\infty} \left\{ \Tr \left[
+\rho
+\left(
+\begin{array}{cccc}
+ G(\epsilon;\frac{1}{2}) & 0 & 0 & 0 \\
+ 0 &  G(\epsilon;0) & 0 & 0 \\
+ 0 & 0 &  G(\epsilon;0) & 0 \\
+ 0 & 0 & 0 &  G(\epsilon;\frac{1}{2}) \\
+\end{array}
+\right) \right] \right\} \nonumber \\[0.5em]
+&= -\lim_{\epsilon \to -\infty} \left\{ \Tr \left[
+\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & 1/2 & i/2 & 0 \\
+ 0 & -i/2 & 1/2 & 0 \\
+ 0 & 0 & 0 & 0 \\
+\end{array}
+\right)
+\left(
+\begin{array}{cccc}
+ -\log2 & 0 & 0 & 0 \\
+ 0 &  \epsilon & 0 & 0 \\
+ 0 & 0 &  \epsilon & 0 \\
+ 0 & 0 & 0 &  -\log2 \\
+\end{array}
+\right) \right] \right\} \nonumber \\[0.5em]
+&=
+-\lim_{\epsilon \to -\infty} \left\{ \Tr \left[
+\left(
+\begin{array}{cccc}
+ 0 & 0 & 0 & 0 \\
+ 0 & \epsilon /2 & (i\epsilon)/2 & 0 \\
+ 0 & (-i\epsilon)/2 & \epsilon/2 & 0 \\
+ 0 & 0 & 0 & 0 \\
+\end{array}
+\right)
+\right] \right\} \nonumber \\[0.5em]
+&=-\lim_{\epsilon \to -\infty} \left(0+\epsilon/2+\epsilon/2+0\right) \nonumber \\[0.5em]
+&=+\infty 
+\end{align}
+This result...

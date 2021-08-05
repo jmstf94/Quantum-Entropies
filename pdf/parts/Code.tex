@@ -1,0 +1,379 @@
+\appendix
+\chapter{Mathematica Code}
+This is most of the notebook used for the calculations in the thesis. There are some function that are not defined here but there will become available on \href{https://github.com/jmstf94}{github}.
+\label{appendix:code}
+\section{Basics}
+\begin{verbatim}
+The first line makes mathematica arrays look like matrices at the outputs. 
+
+The rest is a function that traces out a subsystem of quDits from a N-quDit system.
+dTraceSystem has 3 arguments, the density matrix \[Rho], 
+the list of qudits to trace out, 
+e.g. {2, 3} and the dimension d of the qudits. This code was taken from the 
+Wolfram Library Archive and it is called "Partial Trace of a MultiquDit System" 
+by Mark Tame.
+(https://library.wolfram.com/infocenter/MathSource/8763/)
+
+ClearAll["Global`*"]
+$PrePrint = If[MatrixQ[#], MatrixForm[#], #] &;
+SwapParts[expr_, pos1_, pos2_] := 
+ ReplacePart[#, #, {pos1, pos2}, {pos2, pos1}] &[expr]
+dTraceSystem[D_, s_, dimen_] := (
+  
+  Qudits = Reverse[Sort[s]];
+  TrkM = D;
+  dim = dimen;
+  
+  z = (Dimensions[Qudits][[1]] + 1);
+  
+  For[q = 1, q < z, q++,
+   n = Log[dim, (Dimensions[TrkM][[1]])];
+   M = TrkM;
+   k = Qudits[[q]];
+   If[k == n,
+    TrkM = {};
+    For[p = 1, p < dim^n + 1, p = p + dim,
+     TrkM = Append[TrkM, \!\(
+\*UnderoverscriptBox[\(\[Sum]\), \(h = 0\), \(dim - 1\)]\(Take[
+          M[\([\)\(p + h, All\)\(]\)], {1 + h, 
+\*SuperscriptBox[\(dim\), \(n\)], dim}]\)\)];
+      ],
+    
+    For[j = 0, j < (n - k), j++,
+     b = {0};
+     For[i = 1, i < dim^n + 1, i++,
+      If[IntegerDigits[i - 1, dim, n][[n]] != 
+         IntegerDigits[i - 1, dim, n][[n - j - 1]] && 
+        Count[b, i]  == 0, 
+       b = 
+        Append[b, (FromDigits[
+            
+            SwapParts[(IntegerDigits[i - 1, dim, n]), {n}, {n - j - 
+               1}], dim] + 1)];
+       c = Range[dim^n];
+       perm = 
+        SwapParts[
+         c, {i}, {(FromDigits[
+             SwapParts[(IntegerDigits[i - 1, dim, n]), {n}, {n - j - 
+                1}], dim] + 1)}];
+       M = M[[perm, perm]];
+        ]    
+      ];
+        ];
+    
+    TrkM = {};
+    For[p = 1, p < dim^n + 1, p = p + dim,
+     TrkM = Append[TrkM, \!\(
+\*UnderoverscriptBox[\(\[Sum]\), \(h = 0\), \(dim - 1\)]\(Take[
+          M[\([\)\(p + h, All\)\(]\)], {1 + h, 
+\*SuperscriptBox[\(dim\), \(n\)], dim}]\)\)];
+     ]
+    ]
+   ]
+  
+  ; Return[TrkM])
+\end{verbatim}
+\section{von Neumann I}
+\begin{verbatim}
+psi = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}}
+rho = KroneckerProduct[psi1, ConjugateTranspose[psi1]]
+{vals, vecs} = Eigensystem[rho1]
+M = Transpose[vecs1]
+Det[M1]
+Inverse[M]
+DG = DiagonalMatrix[vals]
+M.DG.Inverse[M] == rho;
+F[x_] := Piecewise[{{x*Log[x], x > 0}, {0, x == 0}}, null];
+FD = MatrixFunction[F, DG]
+-Tr[M.FD.Inverse[M]]
+\end{verbatim}
+\section{von Neumann II}
+\begin{verbatim}
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+rho = Refine[{{s, 0}, {0, 1 - s}}]
+{vals, vecs} = Refine[Eigensystem[rho]]
+F[x_] := Piecewise[{{x*Log[x], x > 0}, {0, x == 0}}, null];
+FD = Refine[MatrixFunction[F, rho]]
+L = -Tr[FD]
+Plot[L, {s, 0, 1}, AxesLabel -> {"s", "S (\[Rho])" }]
+\end{verbatim}
+\section{Renyi I}
+\begin{verbatim}
+$Assumptions = \[Alpha] \[Element] Reals && \[Alpha] > 
+    0 && \[Alpha] != 1;
+psi = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}}
+rho = KroneckerProduct[psi, ConjugateTranspose[psi]]
+{vals, vecs} = Eigensystem[rho]
+M = Transpose[vecs]
+Det[M]
+Inverse[M]
+DG = DiagonalMatrix[vals]
+M.DG.Inverse[M] == rho
+F[x_] := x^\[Alpha];
+matrixtrans = Refine[MatrixFunction[F, DG]]
+matrixtransnext = M.matrixtrans.Inverse[M]
+L = Tr[matrixtransnext]
+Log[L]
+\end{verbatim}
+\section{Renyi II}
+\begin{verbatim}
+Clear[\[Alpha], s]
+$Assumptions = \[Alpha] \[Element] Reals && \[Alpha] > 
+    0 && \[Alpha] != 1;
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+rho = {{s, 0}, {0, 1 - s}}
+function[x_] := x^\[Alpha]
+finalmatrix = MatrixFunction[function, rho]
+L = Log[Tr[finalmatrix]]/(1 - \[Alpha])
+Plot[Evaluate@Table[L, {\[Alpha], 0.1, 4, 0.4}], {s, 0, 1}, 
+ PlotLegends -> 
+  LineLegend[Table[\[Alpha], {\[Alpha], 0.1, 4, 0.4}], 
+   LegendLabel -> \[Alpha]], AxesLabel -> {"s", "R(\[Alpha];\[Rho])"}]
+Plot3D[L, {s, 0, 1}, {\[Alpha], 0, 15}, 
+ AxesLabel -> {"s", "\[Alpha]", "R"}]
+\end{verbatim}
+\section{Tsallis I}
+\begin{verbatim}
+Clear[q];
+$Assumptions = q \[Element] Reals && q > 0 && q != 1;
+psi = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}};
+rho = KroneckerProduct[psi, ConjugateTranspose[psi]];
+{vals, vecs} = Eigensystem[rho]
+M = Transpose[vecs]
+Det[M]
+Inverse[M]
+DG = DiagonalMatrix[vals]
+M.DG.Inverse[M] == rho
+t[x_] := x^q;
+FD = Simplify[MatrixFunction[t, DG]]
+trace = Tr[M.FD.Inverse[M]]
+(trace - 1)/(1 - q)
+\end{verbatim}
+\section{Tsallis II}
+\begin{verbatim}
+Clear[q, s]
+$Assumptions = q \[Element] Reals && q > 0 && q != 1;
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+rho = {{s, 0}, {0, 1 - s}}
+function[x_] := x^q
+matr = MatrixFunction[function, rho]
+L = ((Tr[matr]) - 1)/(1 - q)
+Plot[Evaluate@Table[L, {q, 0.1, 4, 0.4}], {s, 0, 1}, 
+ PlotLegends -> 
+  LineLegend[Table[q, {q, 0.1, 4, 0.4}], LegendLabel -> q], 
+ AxesLabel -> {"s", "T(q;\[Rho])"}]
+Plot3D[L8, {s, 0, 1}, {q, 0, 15}, AxesLabel -> {"s", "q", "T"}]
+\end{verbatim}
+\section{Conditional}
+\begin{verbatim}
+Clear[\[Theta]]
+$Assumptions = \[Theta] \[Element] Reals && 0 < \[Theta] < \[Pi]/2;
+chi = {{Cos[\[Theta]]}, {0}, {0}, {Sin[\[Theta]]}}
+sigma = Refine[KroneckerProduct[chi, ConjugateTranspose[chi]]]
+{values, vecs} = Eigensystem[sigma]
+M = Simplify[Transpose[vecs]]
+FullSimplify[Det[M]]
+Minv = Simplify[Inverse[M]]
+diag = DiagonalMatrix[values]
+sigma == M.diag.Minv
+sigmaA = dTraceSystem[sigma, {2}, 2]
+F[x_] := x*Log[x];
+L = MatrixFunction[F, sigmaA]
+FullSimplify[L3 = Tr[L]]
+Plot[L3, {\[Theta], 0, \[Pi]/2}, AxesLabel -> {"\[Theta]", "S(A|B)"}]
+Refine[L3, \[Theta] == \[Pi]/4]
+\end{verbatim}
+\section{Werner von Neumann}
+\begin{verbatim}
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0}, {0, 
+    0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};
+{Wvals, Wvecs} = Eigensystem[WernerState];
+Mw = Refine[Transpose[Wvecs]];
+Det[Mw];
+Inverse[Mw];
+DGw = Refine[DiagonalMatrix[Wvals]];
+WernerState == Simplify[Mw.DG.Inverse[Mw]];
+Fw[x_] := Piecewise[{{x*Log[x], x > 0}, {0, x == 0}}, null];
+FDw = Refine[MatrixFunction[Fw, DGw]];
+
+Simplify[-Tr[Mw.FDw.Inverse[Mw]]] == Simplify[vonNeumann[WernerState]];
+Simplify[vonNeumann[WernerState]];
+WernerStateA = Simplify[dTraceSystem[WernerState, {2}, 2]];
+CSofWerner = vonNeumann[WernerState] - vonNeumann[WernerStateA]
+Entanglementsvalue = N[Refine[CSofWerner, s == 1/3]];
+N[Refine[vonNeumann[WernerStateA], s == 1/3]];
+zerocondwerner = s /. FindRoot[CSofWerner, {s, 0.7}]
+
+plot1 = Plot[CSofWerner, {s, 0, 1}, AxesLabel -> {"s", "S(B|A)"}, 
+  GridLines -> {{{1/3, Dashed}}, {{Entanglementsvalue, Dashed}}}, 
+  Epilog -> {{Blue, PointSize@Large, 
+     Point[{1/3, Entanglementsvalue}]}, {Red, PointSize@Large, 
+     Point[{zerocondwerner, 0}]}}]
+\end{verbatim}
+\section{Werner Tsallis}
+\begin{verbatim}
+Clear[s, x, q];
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0}, {0, 
+    0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};
+WernerStateA = Simplify[dTraceSystem[WernerState, {2}, 2]];
+
+{valsT, vecsT} = Refine[Eigensystem[WernerState]];
+MT = Refine[Transpose[vecsT]];
+Inverse[MT];
+DGT = Refine[DiagonalMatrix[valsT]];
+FT[y_] := Piecewise[{{y^x, y >= 0}}, null];
+FDT = Refine[MatrixFunction[FT, DGT]];
+MT.FDT.Inverse[MT];
+
+Firstterm = (Tr[MT.FDT.Inverse[MT]] - 1)/(1 - x);
+
+FDT2 = Refine[MatrixFunction[FT, WernerStateA]];
+Secondterm = (Tr[FDT2] - 1)/(1 - x);
+ResultingT = 
+ Simplify[(Firstterm - Secondterm)/(1 + (1 - x)*Secondterm)]
+Plot3D[ResultingT, {x, 0, 3}, {s, 0, 1}]
+
+examplidionT1 = Refine[ResultingT, x == 0.3];
+root1 = s /. FindRoot[examplidionT1, {s, 0.9}];
+examplidionT2 = Refine[ResultingT, x == 0.9];
+root2 = s /. FindRoot[examplidionT2, {s, 0.9}];
+examplidionT3 = Refine[ResultingT, x == 1.5];
+root3 = s /. FindRoot[examplidionT3, {s, 0.9}];
+examplidionT4 = Refine[ResultingT, x == 2.1];
+root4 = s /. FindRoot[examplidionT4, {s, 0.9}];
+examplidionT5 = Refine[ResultingT, x == 2.7];
+root5 = s /. FindRoot[examplidionT5, {s, 0.9}];
+examplidionT6 = Refine[ResultingT, x == 3.3];
+root6 = s /. FindRoot[examplidionT6, {s, 0.9}];
+examplidionT7 = Refine[ResultingT, x == 3.9];
+root7 = s /. FindRoot[examplidionT7, {s, 0.9}];
+
+Root1 = examplidionT1 /. s -> 1/3;
+Root2 = examplidionT2 /. s -> 1/3;
+Root3 = examplidionT3 /. s -> 1/3;
+Root4 = examplidionT4 /. s -> 1/3;
+Root5 = examplidionT5 /. s -> 1/3;
+Root6 = examplidionT6 /. s -> 1/3;
+Root7 = examplidionT7 /. s -> 1/3;
+
+Plot[Evaluate@Table[ResultingT, {x, 0.3, 4, 0.6}], {s, 0, 1}, 
+ PlotLegends -> 
+  LineLegend[Table[x, {x, 0.3, 4, 0.6}], LegendLabel -> x], 
+ AxesLabel -> {"s", "T(B|A)"}, 
+ GridLines -> {{{1/3, Dashed}}, {{Root1, Dashed}}}, 
+ Epilog -> {{Red, PointSize[Large], Point[{1/3, Root1}]}, {Blue, 
+    PointSize[Large], Point[{root1, 0}]}}]
+EntanglementLimitValueT = Refine[ResultingT, s == 1/3];
+Plot[EntanglementLimitValueT, {x, 0, 50}]
+\end{verbatim}
+\section{Werner Renyi}
+\begin{verbatim}
+Clear[\[Alpha], s]
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0}, {0, 
+    0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};
+WernerStateA = Simplify[dTraceSystem[WernerState, {2}, 2]];
+CRofWerner = 
+  FullSimplify[
+   Renyi[WernerState, \[Alpha]] - Renyi[WernerStateA, \[Alpha]]];
+Clear[\[Alpha]]
+{valsR, vecsR} = Refine[Eigensystem[WernerState]];
+MR = Refine[Transpose[vecsR]];
+Inverse[MR];
+DGR = Refine[DiagonalMatrix[valsR]];
+FR[y_] := Piecewise[{{y^\[Alpha], y >= 0}}, null];
+FDR = Refine[MatrixFunction[FR, DGR]];
+FDR;
+FtermR = Simplify[Log[Tr[MR.FDR.Inverse[MR]]]/(1 - \[Alpha])];
+FDR = Refine[MatrixFunction[FR, WernerStateA]];
+FDR;
+StermR = Simplify[Log[Tr[FDR]]/(1 - \[Alpha])];
+ttt = Simplify[FtermR - StermR];
+
+examplidionR1 = Refine[CRofWerner, \[Alpha] == 0.3];
+Rroot1 = s /. FindRoot[examplidionR1, {s, 0.9}];
+Root1 = examplidionR1 /. s -> 1/3;
+
+Plot[Evaluate@Table[ttt, {\[Alpha], 0.3, 4, 0.6}], {s, 0, 1}, 
+ PlotLegends -> 
+  LineLegend[Table[\[Alpha], {\[Alpha], 0.3, 4, 0.6}], 
+   LegendLabel -> \[Alpha]], AxesLabel -> {"s", "R(\[Alpha];W)"}, 
+ GridLines -> {{{1/3, Dashed}}, {{Root1, Dashed}}}, 
+ Epilog -> {{Red, PointSize[Large], Point[{1/3, Root1}]}, {Blue, 
+    PointSize[Large], Point[{Rroot1, 0}]}}]
+
+
+examplidionS = Refine[CRofWerner, \[Alpha] == 0.3];
+s /. FindRoot[examplidionS, {s, 0.9}];
+
+EntanglementLimitValue = Refine[CRofWerner, s == 1/3]
+Plot[EntanglementLimitValue, {\[Alpha], 0, 50}]
+Plot3D[ttt, {\[Alpha], 0, 3}, {s, 0, 1}]
+\end{verbatim}
+\section{Relative I}
+\begin{verbatim}
+Clear[t, u, psi, rho]
+$Assumptions = t \[Element] Reals && 0 < t < \[Pi]/2;
+$Assumptions = u \[Element] Reals && 0 < u < \[Pi]/2;
+psit = {{Cos[t]}, {0}, {0}, {Sin[t]}};
+rhot = Refine[KroneckerProduct[psit, ConjugateTranspose[psit]], 
+  t \[Element] Reals ]
+psi = {{Cos[u]}, {0}, {0}, {Sin[u]}};
+rho = Refine[KroneckerProduct[psi, ConjugateTranspose[psi]]]
+Kappa[x_] := 
+  Piecewise[{{Log[x], x > 0}, {\[CurlyEpsilon], x == 0}}, null];
+
+{valst, vecst} = FullSimplify[Refine[Eigensystem[rhot]]]
+Mt = FullSimplify[Refine[Transpose[vecst]]]
+DGt = Refine[DiagonalMatrix[valst]]
+InveMt = FullSimplify[Inverse[Mt]]
+
+Mt.MatrixFunction[Kappa, DGt].InveMt
+FullSimplify[Tr[rho.Simplify[MatrixFunction[Kappa, rhot]]]]
+
+Mt.MatrixFunction[Kappa, DGt].InveMt /. t -> u
+FullSimplify[Tr[rho.Simplify[MatrixFunction[Kappa, rhot]]]]
+\end{verbatim}
+\section{Relative II}
+\begin{verbatim}
+$Assumptions = s \[Element] Reals && 0 < s < 1;
+WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0}, {0, 
+    0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};
+psi1 = (1/Sqrt[2])*{{0}, {1}, {-I}, {0}};
+rho1 = KroneckerProduct[psi1, ConjugateTranspose[psi1]];
+WernerState2 = Simplify[(1 - s)*IdentityMatrix[4]/4 + s*rho1];
+{Wvals, Wvecs} = Eigensystem[WernerState2];
+Mw = Refine[Transpose[Wvecs]]
+Inverse[Mw]
+DGw = Refine[DiagonalMatrix[Wvals]]
+WernerState2 == Simplify[Mw.DGw.Inverse[Mw]]
+
+MaximallyMixed = IdentityMatrix[4]/4
+testcase1 = RelativeEntropy[WernerState2, MaximallyMixed]
+Plot[testcase1, {s, 0, 1}, AxesLabel -> {"s", "Q(W,I)"}]
+testcase2 = RelativeEntropy[MaximallyMixed, WernerState2]
+Plot[testcase2, {s, 0, 1}, AxesLabel -> {"s", "Q(I,W)"}]
+\end{verbatim}
+\section{Relative III}
+\begin{verbatim}
+Clear[s, \[Theta], chi, sigma, WernerState, WernerState2, chi3, \
+sigma3, WernerState2]
+$Assumptions = 
+  s \[Element] Reals && 0 < s < 1 && \[Theta] \[Element] Reals && 
+   0 < \[Theta] < \[Pi]/2;
+WernerState = {{(1 + s)/4, 0, 0, s/2}, {0, ((1 - s)/4), 0, 0}, {0, 
+    0, (1 - s)/4, 0}, {s/2, 0, 0, (1 + s)/4}};
+
+chi = {{Cos[\[Theta]]}, {0}, {0}, {Sin[\[Theta]]}};
+sigma = Refine[KroneckerProduct[chi, ConjugateTranspose[chi]]];
+
+case = RelativeEntropy[sigma, WernerState]
+
+Plot[Evaluate@Table[case, {s, 0.1, 0.9, 0.1}], {\[Theta], 0, \[Pi]/2},
+  PlotLegends -> 
+  LineLegend[Table[s, {s, 0.1, 0.9, 0.1}], LegendLabel -> s], 
+ AxesLabel -> {"\[Theta]", "Q(\[Sigma],W)"}, 
+ GridLines -> {{{\[Pi]/4, Dashed}}, None}]
+\end{verbatim}

@@ -1,0 +1,32 @@
+\section{Renyi Entropy}
+One of the widely used generalizations of Shannon entropy is the Renyi entropy. It was introduced originaly in \cite{renyi1961measures} for the probability mass  $X_k=\{p_{i}\}=\{p_{1},p_{2},....p_{k}\}$ as:
+\begin{equation}
+H_{\alpha}\left(X_{k}\right)=\frac{1}{1-\alpha} \log \left(\sum_{i} p_{i}^{\alpha}\right)
+\end{equation}
+for which $\alpha \in (0,1) \cup (1,\infty)$ is a parameter.
+\par 
+Using Umegaki's techniques Petz(\cite{petz1986quasi},\cite{umegaki1962conditional}) generalized Renyi entropy to it's quantum version:
+\begin{definition}
+(Quantum Renyi entropy)The quantum Renyi entropy of a quantum state $\rho$ is defined as:
+\begin{equation}
+S_{\alpha}(\rho)=\frac{1}{1-\alpha} \log \Tr\left(\rho^{\alpha}\right), \alpha \in(0,1) \cup(1, \infty)
+\end{equation}
+\end{definition}
+As we can clearly see this entropy does not create programmably ill-defined calculations. This is because now the function that accepts the matrix generalization is just $r(\alpha;x)=x^{\alpha}$
+in which $x \in \mathbb{R}$. We re-express the quantum Renyi entropy in its heuristic form making two changes. The notation, and the use of the function $r(\alpha;x)$. Before the symbol $;$ we consider free parameters of the function while after that the variable of the function.
+\begin{definition}(Heuristic quantum Renyi entropy)For a density matrix $\rho \in \mathcal{D}(\mathcal{H})$ the heuristic form of the quantum Renyi entropy is defined as:
+\begin{equation}
+R(\alpha ; \rho)= \frac{1}{1-\alpha} \log \Tr \left(r(\alpha;\rho)\right), \alpha \in(0,1) \cup(1, \infty)
+\end{equation}
+in which $r$ is the function $r:[0,1] \rightarrow \mathbb{R^{+}}$:
+\begin{equation}
+r(\alpha;x)=x^{\alpha}
+\end{equation}
+\label{renyi}
+\end{definition}
+Having now the heuristic formula, the programmability of this entropy is clear. Note that  the domain of the function does not create a problem similar to that of the von Neumann entropy, but the definition serves a future point. 
+\begin{note}
+It is proven that: $\lim _{\alpha \rightarrow 1} R(\alpha;\rho)=S(\rho)$
+\end{note}
+\noindent
+This means that the von Neumann  entropy can be viewed as a limiting case of the Renyi entropy. Worth mentioning that for $\alpha \to 0$ and $\alpha \to \infty$ the Renyi entropy converges to the Hartley entropy and the min entropy respectively.

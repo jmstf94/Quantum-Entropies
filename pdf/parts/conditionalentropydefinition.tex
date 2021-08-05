@@ -1,0 +1,34 @@
+\section{Quantum Conditional Entropy}
+We turn back to the original Shannon paper and check the conditional entropy formula:
+\begin{equation}
+H(x \mid y)=-\sum_{i, j} p(i, j) \log p_{i}(j)= H(x,y)-H(y)
+\end{equation}
+\noindent
+One of the earliest times we see a quantum analog of this type of entropy is based on the definition of the conditional density matrix $\rho_{A \mid B}$(i.e. conditional probability density function) at \citep{cerf1997negative}.
+
+However, textbooks adopt a simpler definition of the quantum conditional entropy based purely on the von Neumann entropy(\citep{nielsen_chuang_2010}):
+
+\begin{definition}(Conditional von Neumann Entropy)The quantum version of the conditional entropy is purely based on \defref{vonNeumanndef} and is defined as:
+\begin{equation}
+S(A \mid B) = S(A B)-S(B)
+\label{condent}
+\end{equation}
+\label{defcondin}
+Where $S(A B)=S(\rho^{A B})$ and
+$S(B)= S\left(\Tr_{A} \rho^{A B}\right)$.
+\end{definition}
+\noindent
+It is proven that negative conditional entropy is a sufficient criterion for entanglement. This issue is explained in \citep{cerf1997entropic} and is based on Bell's inequality.
+\subsection{Extra conditional entropies} The conditional form can be extended to many types/functions of quantum entropies. In the Renyi case as defined in \citep{vollbrecht2002conditional}:
+\begin{definition}(Quantum Conditional Renyi Entropy)The conditional form of the quantum Renyi entropy, for a density matrix $\rho \in \mathcal{D}(\mathcal{H})$ is defined as:
+\begin{equation}
+R(\alpha;A \mid B)=R(\alpha;\rho^{AB})-R(\alpha;\rho^B)
+\end{equation}
+\end{definition}
+The Tsallis conditional case is discussed in \citep{abe2001nonadditive} and defined purely based on the conditional probability distribution of the classical case, due to non commutativity of the conditional density matrix and the marginals:
+\begin{definition}(Quantum Conditional Tsallis Entropy)The conditional form of the quantum Tsallis entropy is defined as:
+\begin{equation}
+T(q;A \mid B)=\frac{T(q;\rho^{AB})-T(q;\rho^B)}{1+(1-q) T(q;\rho^{B})}
+\end{equation}
+\label{tsalcond}
+\end{definition}

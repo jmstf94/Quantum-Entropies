@@ -1,0 +1,43 @@
+\section{Relative Entropy}
+Relative Entropy or Kullback–Leibler divergence is a measure of the "amount" of difference that two probability distributions have with one another. It is heuristically defined as:
+\begin{equation}
+D(p(x) \| q(x)) \equiv \sum_{x} p(x) \log \frac{p(x)}{q(x)} \equiv-H(p(x))-\sum_{x} p(x) \log q(x).
+\end{equation}
+The characterization as heuristic is based on the fact that we use the conventions:$- p(x) \log 0 = \infty$ for $p(x)>0$ and $0 \log 0 \equiv 0$ in order to do calculations. This entropy was introduced in its general case(using probability measures and writing the continuous form of the formula) by Kullback and Leiber in 1951 \cite{kullback1951information}.
+\par
+As in the case of Shannon entropy, a similar generalization process by Umegaki allows us to define the quantum version, i.e. generalizing Relative Entropy for operator algebras( more specifically for von Neumann algebras) in \cite{umegaki1962conditional}.
+\par 
+According to Wilde (\citep{wilde2013quantum}):
+\begin{definition}(Quantum Relative Entropy) The quantum relative entropy $D(\rho \| \sigma)$ between density operators $\rho \in \mathcal{D}(\mathcal{H})$ and $\sigma \in \mathcal{L}(\mathcal{H})$ is defined by:
+\begin{equation}
+D(\rho \| \sigma)= 
+ \begin{cases} 
+      \operatorname{Tr}[ \rho\log \rho ]-\operatorname{Tr} [ \rho \log \sigma]   & \operatorname{supp}(\rho) \subseteq \operatorname{supp}(\sigma) \\
+      \infty & otherwise 
+\end{cases}
+\end{equation}
+\end{definition}
+\noindent
+These types of functions(that may accept infinity as a value) are characterized as generalized. They can be define with rigor with the use of measure theory(in the quantum case using operator algebras).
+\par
+To ease our calculations, we can use the same techniques as in \secref{vonNeumannEntropysec} and define:
+\begin{definition}(Heuristic Quantum Relative Entropy)The heuristic quantum relative entropy $Q(\rho \| \sigma)$ between the density operators $\rho$ and $\sigma$ is defined by:
+\label{heuristickulback}
+\begin{equation}
+Q(\rho \| \sigma)= S(\rho)-\lim_{\epsilon \to -\infty} \big( \operatorname{Tr}[\rho  G(\epsilon; \sigma)] \big)
+\end{equation}
+in which $G: [0,1] \rightarrow \mathbb{R}$ as:
+\begin{equation}
+G(\epsilon;x)=
+\begin{cases}
+   \ln x   &   x \in (0,1] \\
+   \epsilon  &   x=0
+\end{cases}
+\end{equation}
+$\epsilon$ is a free parameter with $\epsilon \in \bbR$.
+\end{definition}
+\noindent
+This redefinition serves our calculation and programming goals sufficiently, at least for symbolic programming.
+\begin{note}
+The function $G(\epsilon;x)$ satisfies the conditions needed to accept spectral matrix generalization described in \autoref{chap:1}.
+\end{note}

@@ -1,0 +1,186 @@
+\label{chap:1}
+In this chapter we will discuss shortly some of the techniques and notations that we use in our endeavours. Most of this chapter can be found in basic books of Linear Algebra and Quantum Theory(\cite{nielsen2001separable},\cite{ballentine2014quantum},\cite{hall2013quantum},\cite{holevo2012quantum},\cite{wilde2013quantum}). However, we try to collect just the bare minimum needed for this thesis, in order to ease the process of understanding our conclusions.
+\par
+Quantum theory, as the experienced reader surely knows, is a mathematical theory that many physical models/systems must somehow obey. Its phenomenology does not appear as an inherent part of the theory(as opposed to electromagnetism or relativity) rather as an impromptu that predicts results of given experiments under some extra assumptions. Assumptions motivated by the rest of physics. For example, in quantum field theory one needs to specify a Lagrangian(i.e. type of interaction, kinematic term) and then apply the "quantum rules" in order to predict experimental results. This seemingly contentless ontology allows quantum theory to be abstract enough, hoping for applicability to pretty much any system imaginable.
+\par
+Why this loquacious (maybe badly received) introduction? Just to note that quantum theory can be applied to a huge collection of different physical systems and to emphasize that we will focus only on a small part of these. We will deal(mostly) with low dimensional finite quantum systems. These are systems like electron spin and photon polarization, or more generally systems that have discrete and distinct states. In the quantum mechanical language, these restrictions translate to matrices and vectors, thus, simplifying our calculations to the furthest extend(allowing us to do common linear algebra). Hence, for the rest of this thesis, unless is otherwise specified, when we are speaking of a quantum system we mean a finite and discrete one. Worth noting though, most if not all definitions and theorems that we 'll use, have a corresponding(sometimes equivalent) more general definition for infinite systems(discrete or continuous).
+\section{Linear Algebra and Operators}
+In quantum mechanics we represent states $\psi$ with the ket vector $\ket{\psi}$ that belongs in a d-dimensional complex Hilbert Space $\mathcal{H}$(\cite{reed1980methods}). A Hilbert space in our case can be thought of as a vector space with some inner product. There is one to one correspondence with the bra $\bra{\psi}$ that belongs to the dual space(which can be defined as a functional of the ket vector): 
+$$\ket{\psi}=\left(\begin{array}{c}\psi_{1} \\ \vdots \\ \psi_{d}\end{array}\right), \qquad \bra{\psi}= \left(\begin{array}{c}\psi_{1} \\ \vdots \\ \psi_{b}\end{array}\right)^{\dagger}=\left(\psi_{1}^{*}, \ldots, \psi_{b}^{*}\right)$$
+with $\dagger$ noting the adjoint. As usual we will denote the inner product with $\braket{\psi|\chi}$.
+Each vector ket can be expressed with an orthonormal basis in the Hilbert space (linearly independent d-dimensional unit vectors with $\braket{e_n|e_m}=\delta_{mn}$). We will exclusively use the Standard or Natural Basis for which:
+$$
+\left(\begin{array}{c}
+\psi_{1} \\
+\vdots \\
+\psi_{d}
+\end{array}\right)=\sum_{\nu=1}^{d} \psi_{\nu} \ket{e_{\nu}},
+\qquad
+\ket{e_{1}}=\left(\begin{array}{c}
+1 \\
+\vdots \\
+0
+\end{array}\right), \ldots, \ket{e_{d}}=\left(\begin{array}{c}
+0 \\
+\vdots \\
+1
+\end{array}\right)
+$$
+While dealing with composite systems, we use the tensor product of the two separate Hilbert spaces in order to make our calculations for the whole system. We also need the tensor product basis(two-qubit systems):
+$$
+|00 \rangle=|0\rangle|0\rangle=|0\rangle \otimes |0\rangle=
+\left(\begin{array}{c}
+1\\
+0\\
+\end{array}
+\right)
+\otimes
+\left( 
+\begin{array}{c}
+1\\
+0\\
+\end{array}
+\right)=\left(\begin{array}{c}
+1 \\
+0\\
+0\\
+0\\
+\end{array}\right)
+$$
+$$
+|01 \rangle=|0\rangle|1\rangle=|0\rangle \otimes |1\rangle=
+\left(\begin{array}{c}
+1\\
+0\\
+\end{array}
+\right)
+\otimes
+\left( 
+\begin{array}{c}
+0\\
+1\\
+\end{array}
+\right)=\left(\begin{array}{c}
+0 \\
+1\\
+0\\
+0\\
+\end{array}\right)
+$$
+$$
+|10 \rangle=|1\rangle|0\rangle=|1\rangle \otimes |0\rangle=
+\left(\begin{array}{c}
+0\\
+1\\
+\end{array}
+\right)
+\otimes
+\left( 
+\begin{array}{c}
+1\\
+0\\
+\end{array}
+\right)=\left(\begin{array}{c}
+0 \\
+0\\
+1\\
+0\\
+\end{array}\right)
+$$
+$$
+|11 \rangle=|1\rangle|1\rangle=|1\rangle \otimes |1\rangle=
+\left(\begin{array}{c}
+0\\
+1\\
+\end{array}
+\right)
+\otimes
+\left( 
+\begin{array}{c}
+0\\
+1\\
+\end{array}
+\right)=\left(\begin{array}{c}
+0\\
+0\\
+0\\
+1\\
+\end{array}\right)
+$$
+\\
+\par
+Let's turn to operators now. Operators
+are central to quantum mechanics. They act on vectors, predict observables and rotate/transform states in the Hilbert space. In Quantum Theory we use self-adjoint operators ($A=A^{\dagger}$) that are represented by $d \times d$ square matrices thus allowing us to call them Hermitian in the usual sense. These matrices have some of the most useful properties of operators that we 'll use in our calculations: diagonalizability, real eigenvalues, linearity and so on.
+\begin{note}
+The support $\supp A$ of a positive operator $A$ is the span of eigenvectors of $A$ corresponding to positive eigenvalues.
+\end{note}
+\begin{note}
+The span of a set of vectors is the set comprising all possible linear combinations of said vectors.
+\end{note}
+\begin{note}
+A Hermitian operator $A$ is called positive, $A \geq 0,$ if $\langle\psi \mid A \psi\rangle \geq 0$ for all $\psi \in \mathcal{H}.$ The eigenvalues of a positive operator are all nonnegative: $a \geq 0$ for $a \in \operatorname{spec}(A)$ ($\operatorname{spec}(A)$ is the spectrum of $A$).
+\end{note}
+\begin{note}
+We denote the set of all possible operators that act on $\mathcal{H}$ as $\mathcal{D}(\mathcal{H})$.
+\end{note}
+\noindent This structure can be formally defined as a group.\begin{note}
+The eigenvectors of a Hermitian matrix constitute an orthogonal set of vectors.
+\end{note}
+\noindent In fact is a property found in symmetric and normal matrices.
+\par
+We must mention the concepts of a dyad and a dyadic(tensors of order two but with different ranks). Specifically, we ignore the formal definitions and focus on the operational forms that are thought of as outer products of a ket and a bra $|\psi\rangle\langle\phi|$. For some vectors in a Hilbert Space or its dual:$$(|\psi\rangle\langle\phi|)|\chi \rangle=|\psi\rangle(\langle\phi \mid \chi \rangle)$$
+The outer product is an operator that can act on a vector. A following lemma states that:
+$$
+\Big( \ket{\psi} \bra{\chi} \Big) \otimes \Big( \ket{\lambda} \bra{\kappa} \Big)=\Big(\ket{\psi} \otimes \ket{\lambda}\Big) \Big(\bra{\chi} \otimes \bra{\kappa}\Big)
+$$
+\par
+We merely mention projectors. They are an example of Hermitian operators that are expanded in a basis by the use of outer products of the basis vectors:
+$$P \equiv \sum_{i=1}^{d}|i\rangle\langle i|$$
+They project the vector to a subspace.
+\subsection{Matrix Functions}
+From linear algebra we conclude that any vector $|v\rangle$ in a Hilbert apace can be written as a linear superposition of a complete set of orthonormal vectors $\{\ket{\phi_i}\}$ of the Hilbert space(also a basis):
+$$|\psi\rangle=\sum_{i} \psi_{i}\left|\phi_{i}\right\rangle$$
+The sums here go up to $d$ the dimension of the space we work on.
+\begin{note}
+The orthonormal set
+of eigenvectors of a Hermitian operator (d-dimensional hermitian matrix) is complete.
+\end{note}
+Immediately follows, that if $A\left|\phi_{i}\right\rangle=\alpha_{i}\left|\phi_{i}\right\rangle$ and the eigenvectors form a complete orthonormal set, then the operator can be reconstructed in a useful diagonal form in terms of its eigenvalues and eigenvectors:
+$$
+A=\sum_{i} \alpha_{i}\left|\phi_{i}\right\rangle\left\langle\phi_{i}\right|
+$$
+This is a form of the spectral decomposition of an operator and in our case is nothing more than matrix diagonalization.
+One can use this diagonal representation to define a function of an operator as is usually the case in quantum theory textbooks:
+$$
+f(A)=\sum_{i} f\left(\alpha_{i}\right)\left|\phi_{i}\right\rangle\left\langle\phi_{i}\right|
+$$
+This is mentioned in the bibliography as the operator/functional calculus. In our case we will reinterpret this in the matrix formation and write:
+$$
+f(A)=M\left(\begin{array}{cccc}
+f\left(\alpha_{1}\right) & 0 & \ldots & 0 \\
+0 & f\left(\alpha_{2}\right) & \cdots & 0 \\
+& \vdots  & \ddots & \vdots \\
+0 & 0 & \cdots & f\left(\alpha_{d}\right)
+\end{array}\right) M^{-1}
+$$
+where 
+$$A=M\left(\begin{array}{cccc}
+\alpha_{1} & 0 & \ldots & 0 \\
+0 & \alpha_{2} & \cdots & 0 \\
+& \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \alpha_{d}
+\end{array}\right)M^{-1}$$
+$M$ is the modal matrix i.e. the square $d \times d$ matrix whose $i$th column is the eigenvector $v_i$ of A. Of course $M$ must be invertible and can be viewed as a similarity transformation of the diagonal eigenmatrix $D=diag(\alpha_1,\dots,\alpha_d)$. Via this method, we get to ignore the normalization of the eigenvectors since the division of the inverse matrix with $det(M)$, fixes the norm without our intervention. Also, turning to this matrix form automatically reveals powerful computational techniques.
+\begin{note}
+Whenever we claim that a certain real function $f:X\rightarrow Y$ takes an operator(matrix) in its argument, we merely mean a calculation of a matrix function based on the above approach.
+\end{note}
+\par
+Let us emphasize something important here. Usually in textbooks of quantum mechanics or linear algebra, the spectral theorem for matrices is proved by expressing $f(A)$ as a Taylor sum, thus implying that $f$ must be an analytic function. However, in our case we will not just use analytic functions. The solution to this problem comes via functional analysis of bounded self-adjoint operators in which we can prove the validity of the spectral theorem (and the operational calculus) in its most general form. Details can be found in \cite{hall2013quantum},\cite{yosida1988functional},\cite{reed1980methods} and \cite{sternberg2019mathematical}. In many cases the statements of the spectral theorem and the definitions that is based on, may differ( Borel, bounded, Baire functions and so on). Some authors use normal operators to argue regarding the theorem. 
+\par
+In order to refer to these properties afterwards with some concreteness, we express the parts of the general spectral theorem that we will use in a nice form:
+\begin{proposition}
+The modal matrix approach of the spectral theorem holds for any real-valued measurable function of a $d \times d$  Hermitian matrix.
+\label{spectraltheorem}
+\end{proposition}
+\noindent
+In this proposition we could write Borel-measurable but for our purpose is somewhat redundant. In our case, functions will have arguments in $[0,1]$ ,even though sometimes we will define them for larger domains. In this case there is an even simpler and stronger proof of the spectral theorem(\citep{hall2013quantum}).

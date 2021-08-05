@@ -1,0 +1,76 @@
+\section{Quantum Theory}
+The usual approach to quantum theory is with axiomatic statements about observables, mean values and time evolution. We just mention here some aspects that are crucial in our analysis and refer the reader to the relevant literature for further exploration.
+\subsection{The density matrix}
+In modern quantum theory one of the most general cases of a quantum state is the density operator:
+$$
+\rho \equiv \sum_{i} p_{i}\left|\psi_{i}\right\rangle\left\langle\psi_{i}\right|
+$$
+which constitutes a statistical ensemble of pure states. Pure states are basically one dimensional projectors while mixed states have more than one non-zero $p_i$. The randomness of a quantum state expressed via the density matrix has two manifestations. Firstly, the  pure states expressed in a orthonormal basis satisfy the $l^2$ norm (\cite{ballentine2014quantum}) while the probability mass density $\{ p_i\}$ of the density matrix follows the $l^1$ norm with:
+$$
+\sum_{i} p_{i}=1
+$$
+In most cases the conditions that the density matrix must satisfy are (usually in an if and only if manner):
+\begin{itemize}
+\item $\Tr \rho=1$
+\item $\rho=\rho^{\dagger}$
+\item $\rho$ is positive
+\end{itemize}
+In the first condition the symbol $\Tr$ denotes the sum of the diagonal elements of the matrix $\rho$. The summation normalization of $\{p_i\}$ can follow from this first condition. Immediately
+\begin{note}
+If $\rho_n$ are the real eigenvalues of the density matrix then: $0 \leq \rho_{n} \leq 1$.
+\end{note}
+\noindent
+All of the above, help us to conclude:
+\begin{note}
+When we calculate functions of quantum states we can be solely based on \propref{spectraltheorem}.
+\end{note}
+Formally the trace of a density matrix $\rho$ may be defined defined as:
+$$
+\Tr \rho =\sum_{i}\left\langle u_{i}|\rho| u_{i} \right\rangle
+$$
+where $\left\{\left|u_{j}\right\rangle\right\}$ is any orthonormal basis.
+Let us remind you some properties of the trace that we exploit later:
+\begin{note}
+It can be proven that the trace of a density matrix is base invariant.
+\end{note}
+\begin{note}
+It can be proven that $\Tr(ABC)=\Tr (CAB)=\Tr(BCA)$ and $\Tr(\ket{\psi}\bra{\chi})=\Tr(\braket{\chi | \psi})$.
+\end{note}
+\noindent
+The above notes make our life easier. Since our calculations are based on traces of operator functions, we don't have to use more than one basis(sometimes none). 
+We just mention here that a density matrix of a so called pure state is idempotent i.e. $\rho=\rho^2$. This is the case iff $\rho=\ket{\psi}\bra{\psi}$, when $\ket{\psi} \in \mathcal{H}$.
+\subsection{Reduced density matrix and Partial Traces}
+Composite systems of two substates are density matrices $\rho^{AB} \in \mathcal{D}(\mathcal{H})$ where $\mathcal{H}=\mathcal{H_A} \otimes\mathcal{H_B}$.
+Let us restrict our previous notation:
+\begin{note}
+We denote as $\mathcal{D}(\mathcal{H})$ just the set of all density operators acting on $\mathcal{H}$.
+\end{note}
+To describe the subsystem $\rho^A$ 
+of $\rho^{AB}$ we need to "trace out" subsystem $B$. To do that we, use the partial trace usually defined as:
+$$
+\rho^A=\Tr_{B}\left( \rho^{AB} \right) \equiv \sum_{i}\left(I_{A} \otimes\left\langle\left. i\right|_{B}\right) \rho^{AB}\left(I_{A} \otimes|i\rangle_{B}\right)\right.
+$$
+with $\ket{i}_B$ being any orthonormal basis for $\mathcal{H_B}$. The approach on partial trace that we will use is more practical. If we express $\rho^{AB}$ as the sum of tensor products in some basis $|i\rangle_{A} \otimes|j\rangle_{B}$:
+$$
+\Tr_B(\rho^{AB})=\Tr_B \left( \sum_{i, j, k, l} p_{ijkl}|i\rangle\left\langle\left. k\right|_{A} \otimes \mid j\right\rangle\left\langle\left. l\right|_{B}\right. \right)= \sum_{i, j, k, l} p_{ijkl} |i\rangle\left\langle\left. k\right|_{A}  \Tr \left(  |j\right\rangle\left\langle l\right|_{B} \right) 
+$$
+which uses the fact that:
+\begin{note}
+The partial trace is a linear operation.
+\end{note}
+\subsection{Entanglement}
+A mixed state of a composite system, described by a density matrix $\rho$ acting on $\mathcal{H_{A}} \otimes \mathcal{H_{B}}$ is separable if there exist $p_{i} \geq 0,\left\{\rho_{A}^{i}\right\}$ and $\left\{\rho_{B}^{i}\right\}$ for which $\rho^{i}_A \in \mathcal{D}(\mathcal{H_A})$, $\rho^{i}_B \in \mathcal{D}(\mathcal{H_B})$
+and
+$$
+\rho=\sum_{i} p_{i} \rho_{A}^{i} \otimes \rho_{B}^{i}
+$$
+where $\sum_{i} p_{i}=1$. Otherwise the state is called entangled. Entanglement is probably the most important byproduct of quantum theory. Lots and lots of discussions can take place about entanglement(\cite{horodecki2009quantum}). Entanglement measures (among them some quantum entropies) try to create sufficient and/or necessary conditions to decide whether or not a given density operator is entangled, as long as measuring the "amount" of entanglement in it.
+\par 
+Bell's inequalities were discovered using the EPR pair (one like \ref{rhomatrix}). Violation of these inequalities is though of as a sufficient criterion for entanglement. This means that local realism does not seem a valid physical assumption from this point of view.  
+\par 
+To avoid ambiguities regarding the words "local realism" we explain:
+\begin{itemize}
+\item The assumption that the physical properties of the system have definite values which exist independent of observation. This is sometimes known as the assumption of realism. 
+\item The assumption that a measurement can be performed on system A that does not influence the result of a measurement on system B. This is sometimes known as the assumption of locality.
+\end{itemize}
+In a sense, local realism refers to the assumption that there exist an underlying joint probability distribution(with local hidden random variables) that can reproduce our experimental results \citep{cerf1997entropic}.
