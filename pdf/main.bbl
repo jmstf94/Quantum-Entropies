@@ -1,0 +1,242 @@
+\begin{thebibliography}{10}
+
+\bibitem{abe2001nonadditive}
+S.~Abe and A.~K. Rajagopal.
+\newblock Nonadditive conditional entropy and its significance for local
+  realism.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  289(1-2):157--164, 2001.
+
+\bibitem{ballentine2014quantum}
+L.~E. Ballentine.
+\newblock {\em Quantum mechanics: a modern development}.
+\newblock World Scientific Publishing Company, 2014.
+
+\bibitem{cerf1997entropic}
+N.~J. Cerf and C.~Adami.
+\newblock Entropic bell inequalities.
+\newblock {\em Physical Review A}, 55(5):3371, 1997.
+
+\bibitem{cerf1997negative}
+N.~J. Cerf and C.~Adami.
+\newblock Negative entropy and information in quantum mechanics.
+\newblock {\em Physical Review Letters}, 79(26):5194, 1997.
+
+\bibitem{cinelli2004parametric}
+C.~Cinelli, G.~Di~Nepi, F.~De~Martini, M.~Barbieri, and P.~Mataloni.
+\newblock Parametric source of two-photon states with a tunable degree of
+  entanglement and mixing: Experimental preparation of werner states and
+  maximally entangled mixed states.
+\newblock {\em Physical Review A}, 70(2):022321, 2004.
+
+\bibitem{de2020proposal}
+B.~de~Lima~Bernardo.
+\newblock Proposal for a direct measurement of the von neumann entropy and the
+  relative entropy of coherence.
+\newblock {\em Physica Scripta}, 95(4):045104, 2020.
+
+\bibitem{gomez2019experimental}
+S.~G{\'o}mez, A.~Mattar, I.~Machuca, E.~G{\'o}mez, D.~Cavalcanti, O.~J.
+  Far{\'\i}as, A.~Ac{\'\i}n, and G.~Lima.
+\newblock Experimental investigation of partially entangled states for
+  device-independent randomness generation and self-testing protocols.
+\newblock {\em Physical Review A}, 99(3):032108, 2019.
+
+\bibitem{hall2013quantum}
+B.~C. Hall.
+\newblock {\em Quantum theory for mathematicians}.
+\newblock Springer, 2013.
+
+\bibitem{hayashi2016quantum}
+M.~Hayashi.
+\newblock {\em Quantum information theory}.
+\newblock Springer, 2016.
+
+\bibitem{holevo2012quantum}
+A.~S. Holevo.
+\newblock {\em Quantum systems, channels, information: a mathematical
+  introduction}, volume~16.
+\newblock Walter de Gruyter, 2012.
+
+\bibitem{horodecki2009quantum}
+R.~Horodecki, P.~Horodecki, M.~Horodecki, and K.~Horodecki.
+\newblock Quantum entanglement.
+\newblock {\em Reviews of modern physics}, 81(2):865, 2009.
+
+\bibitem{hu2006generalized}
+X.~Hu and Z.~Ye.
+\newblock Generalized quantum entropy.
+\newblock {\em Journal of mathematical physics}, 47(2):023502, 2006.
+
+\bibitem{islam2015measuring}
+R.~Islam, R.~Ma, P.~M. Preiss, M.~E. Tai, A.~Lukin, M.~Rispoli, and M.~Greiner.
+\newblock Measuring entanglement entropy in a quantum many-body system.
+\newblock {\em Nature}, 528(7580):77--83, 2015.
+
+\bibitem{kullback1951information}
+S.~Kullback and R.~A. Leibler.
+\newblock On information and sufficiency.
+\newblock {\em The annals of mathematical statistics}, 22(1):79--86, 1951.
+
+\bibitem{tsallis1998}
+P.~T. Landsberg and V.~Vedral.
+\newblock Distributions and channel capacities in generalized statistical
+  mechanics.
+\newblock {\em Physics Letters A}, 247(3):211--217, 1998.
+
+\bibitem{muller2013quantum}
+M.~M{\"u}ller-Lennert, F.~Dupuis, O.~Szehr, S.~Fehr, and M.~Tomamichel.
+\newblock On quantum r{\'e}nyi entropies: A new generalization and some
+  properties.
+\newblock {\em Journal of Mathematical Physics}, 54(12):122203, 2013.
+
+\bibitem{nakamura1961note}
+M.~Nakamura and H.~Umegaki.
+\newblock A note on the entropy for operator algebras.
+\newblock {\em Proceedings of the Japan Academy}, 37(3):149--154, 1961.
+
+\bibitem{nielsen_chuang_2010}
+M.~A. Nielsen and I.~L. Chuang.
+\newblock {\em Quantum Computation and Quantum Information: 10th Anniversary
+  Edition}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{nielsen2001separable}
+M.~A. Nielsen and J.~Kempe.
+\newblock Separable states are more disordered globally than locally.
+\newblock {\em Physical Review Letters}, 86(22):5184, 2001.
+
+\bibitem{patro2017non}
+S.~Patro, I.~Chakrabarty, and N.~Ganguly.
+\newblock Non-negativity of conditional von neumann entropy and global unitary
+  operations.
+\newblock {\em Physical Review A}, 96(6):062102, 2017.
+
+\bibitem{petz1986quasi}
+D.~Petz.
+\newblock Quasi-entropies for finite quantum systems.
+\newblock {\em Reports on mathematical physics}, 23(1):57--65, 1986.
+
+\bibitem{pittenger2000note}
+A.~O. Pittenger and M.~H. Rubin.
+\newblock Note on separability of the werner states in arbitrary dimensions.
+\newblock {\em Optics Communications}, 179(1-6):447--449, 2000.
+
+\bibitem{tsallisquantum}
+G.~A. Raggio.
+\newblock Properties of q-entropies.
+\newblock {\em Journal of Mathematical Physics}, 36(9):4785--4791, 1995.
+
+\bibitem{rathie1991unified}
+P.~N. Rathie and I.~J. Taneja.
+\newblock Unified (r, s)-entropy and its bivariate measures.
+\newblock {\em Information sciences}, 54(1-2):23--39, 1991.
+
+\bibitem{reed1980methods}
+M.~Reed and B.~Simon.
+\newblock {\em Methods of modern mathematical physics. vol. 1. Functional
+  analysis}.
+\newblock Academic New York, 1980.
+
+\bibitem{renyi1961measures}
+A.~R{\'e}nyi et~al.
+\newblock On measures of entropy and information.
+\newblock In {\em Proceedings of the Fourth Berkeley Symposium on Mathematical
+  Statistics and Probability, Volume 1: Contributions to the Theory of
+  Statistics}. The Regents of the University of California, 1961.
+
+\bibitem{rossignoli2010generalized}
+R.~Rossignoli, N.~Canosa, and L.~Ciliberti.
+\newblock Generalized entropic measures of quantum correlations.
+\newblock {\em Physical Review A}, 82(5):052342, 2010.
+
+\bibitem{tsallis2016}
+J.~San~Kim.
+\newblock Tsallis entropy and general polygamy of multiparty quantum
+  entanglement in arbitrary dimensions.
+\newblock {\em Physical Review A}, 94(6):062338, 2016.
+
+\bibitem{PhysRevLett.110.167401}
+J.~R. Schaibley, A.~P. Burgers, G.~A. McCracken, L.-M. Duan, P.~R. Berman,
+  D.~G. Steel, A.~S. Bracker, D.~Gammon, and L.~J. Sham.
+\newblock Demonstration of quantum entanglement between a single electron spin
+  confined to an inas quantum dot and a photon.
+\newblock {\em Phys. Rev. Lett.}, 110:167401, Apr 2013.
+
+\bibitem{segal1960note}
+I.~Segal.
+\newblock A note on the concept of entropy.
+\newblock {\em Journal of Mathematics and Mechanics}, pages 623--629, 1960.
+
+\bibitem{shannon1948mathematical}
+C.~E. Shannon.
+\newblock A mathematical theory of communication.
+\newblock {\em The Bell system technical journal}, 27(3):379--423, 1948.
+
+\bibitem{sharp2015translation}
+K.~Sharp and F.~Matschinsky.
+\newblock Translation of ludwig boltzmann’s paper “on the relationship
+  between the second fundamental theorem of the mechanical theory of heat and
+  probability calculations regarding the conditions for thermal equilibrium”
+  sitzungberichte der kaiserlichen akademie der wissenschaften.
+  mathematisch-naturwissen classe. abt. ii, lxxvi 1877, pp 373-435 (wien. ber.
+  1877, 76: 373-435). reprinted in wiss. abhandlungen, vol. ii, reprint 42, p.
+  164-223, barth, leipzig, 1909.
+\newblock {\em Entropy}, 17(4):1971--2009, 2015.
+
+\bibitem{sternberg2019mathematical}
+S.~Sternberg.
+\newblock {\em A Mathematical Companion to Quantum Mechanics}.
+\newblock Courier Dover Publications, 2019.
+
+\bibitem{susskind2005introduction}
+L.~Susskind and J.~Lindesay.
+\newblock {\em An introduction to black holes, information and the string
+  theory revolution: The holographic universe}.
+\newblock World Scientific, 2005.
+
+\bibitem{tsallis1988original}
+C.~Tsallis.
+\newblock Possible generalization of boltzmann-gibbs statistics.
+\newblock {\em Journal of statistical physics}, 52(1-2):479--487, 1988.
+
+\bibitem{umegaki1962conditional}
+H.~Umegaki.
+\newblock Conditional expectation in an operator algebra, iv (entropy and
+  information).
+\newblock In {\em Kodai Mathematical Seminar Reports}, volume~14, pages 59--85.
+  Department of Mathematics, Tokyo Institute of Technology, 1962.
+
+\bibitem{vollbrecht2002conditional}
+K.~G.~H. Vollbrecht and M.~M. Wolf.
+\newblock Conditional entropies and their relation to entanglement criteria.
+\newblock {\em Journal of Mathematical Physics}, 43(9):4299--4306, 2002.
+
+\bibitem{von2018mathematical}
+J.~Von~Neumann.
+\newblock {\em Mathematical foundations of quantum mechanics: New edition}.
+\newblock Princeton university press, 2018.
+
+\bibitem{werner1989quantum}
+R.~F. Werner.
+\newblock Quantum states with einstein-podolsky-rosen correlations admitting a
+  hidden-variable model.
+\newblock {\em Physical Review A}, 40(8):4277, 1989.
+
+\bibitem{wilde2013quantum}
+M.~M. Wilde.
+\newblock {\em Quantum information theory}.
+\newblock Cambridge University Press, 2013.
+
+\bibitem{yosida1988functional}
+K.~Yosida.
+\newblock {\em Functional analysis}, volume 123.
+\newblock springer, 1988.
+
+\bibitem{zhang2002experimental}
+Y.-S. Zhang, Y.-F. Huang, C.-F. Li, and G.-C. Guo.
+\newblock Experimental preparation of the werner state via spontaneous
+  parametric down-conversion.
+\newblock {\em Physical Review A}, 66(6):062315, 2002.
+
+\end{thebibliography}

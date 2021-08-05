@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: abbrv.bst
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+Database file #1: bibliography/biblio.bib
+Warning--can't use both volume and number fields in umegaki1962conditional
+You've used 42 entries,
+            2118 wiz_defined-function locations,
+            765 strings with 10682 characters,
+and the built_in function-call counts, 13157 in all, are:
+= -- 1268
+> -- 594
+< -- 5
++ -- 241
+- -- 194
+* -- 950
+:= -- 2243
+add.period$ -- 128
+call.type$ -- 42
+change.case$ -- 211
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 495
+empty$ -- 1068
+format.name$ -- 194
+if$ -- 2700
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 53
+newline$ -- 213
+num.names$ -- 84
+pop$ -- 213
+preamble$ -- 1
+purify$ -- 180
+quote$ -- 0
+skip$ -- 320
+stack$ -- 0
+substring$ -- 827
+swap$ -- 64
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 146
+warning$ -- 1
+while$ -- 131
+width$ -- 44
+write$ -- 457
+(There was 1 warning)
